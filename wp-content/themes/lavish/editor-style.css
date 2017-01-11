@@ -1,0 +1,9 @@
+/* CSS Document for the post editor */
+@import url( 'css/bootstrap.min.css' );
+@import url( 'style.css' );
+
+body {
+	font-size: 13px;
+	max-width: 1140px;
+	background-color: #fff;
+}

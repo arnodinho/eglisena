@@ -1,0 +1,40 @@
+Keep a change log to describe all the changes made to program source files. The purpose of this is so that people investigating bugs in the future will know about the changes that might have introduced the bug. Often a new bug can be found by looking at what was recently changed. More importantly, change logs can help you eliminate conceptual inconsistencies between different parts of a program, by giving you a history of how the conflicting concepts arose and who they came from.
+
+Changelog Legend:
+----
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Changes
+[x] = Deleted
+[!] = Bugs
+
+----
+
+(May 15, 2015) Version 1.0 Styled Themes <www.styledthemes.com>
+Initial Release
+
+----
+(May 15, 2015) Version 1.0.3 Styled Themes <www.styledthemes.com>
+[+] = Added License info of TGM Plugin
+[*] = Changed the TGM plugin to latest version
+[x] = Deleted the admin files included in the theme
+[!] = Fixed the bug of text-domain and prefixing
+[!] = Remove Favico Option
+----
+
+(May 15, 2015) Version 1.0.4 Styled Themes <www.styledthemes.com>
+[+] = Fixed Prefixing
+[*] = Made the Logo Default
+[!] = Generated New .Pot File
+
+----
+
+(May 15, 2015) Version 1.0.5 Styled Themes <www.styledthemes.com>
+[+] = Fixed the Custom header Function
+[*] = Fixed jQuery Error
+[!] = Generated New .Pot File
+
+----
+

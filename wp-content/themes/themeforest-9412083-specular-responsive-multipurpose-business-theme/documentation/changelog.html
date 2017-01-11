@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstraped Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="author" content="Autor">
+
+    <!-- loading the css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+    <style type="text/css">
+    </style>
+
+
+    <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!-- Various Icons (Favicon, Touch Icon,... -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+</head>
+
+
+
+<body id="top" class="index" data-spy="scroll" data-target=".navbar-nav">
+
+    <!-- ========================= NAVIGATION BAR >> START ========================= -->
+    <!-- Fixed navbar -->
+    <!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <col-md- class="sr-only">Toggle navigation</col-md->
+            <col-md- class="icon-bar"></col-md->
+            <col-md- class="icon-bar"></col-md->
+            <col-md- class="icon-bar"></col-md->
+          </button>
+         <!-- <a class="navbar-brand" href="#">Specular</a>-->
+    <!--</div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a href="#top"></a>
+            </li>-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#page-top">Start Bootstrap</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll "><a href="index.html">Home</a>
+                    </li>
+                    <li class="page-scroll dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="main.html#general_information">General Information</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#requirements">Requirements</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#things_to_do">Things to do</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#support">Support Forum</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#install_wp">Install Wordpress</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#theme_install">Theme Installation</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#plugin_install">Plugin Installation</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#update_theme">Update Theme</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#import_demo">Import Demo Content</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Options</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#general_options">General Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#header_options1">Header Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#styling_options">Styling Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#typography_options">Typography Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#footer_options1">Footer Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#blog_config">Blog Configuration</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#portfolio_config">Portfolio Configuration</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#layout">Layout</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#clients">Clients</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#social-media">Social Media</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#custom_sidebars">Custom Sidebars</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#demo_export">Demo / Export</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Header</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#setup_header">Setup Header</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#header_options2">Header Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#menu_options">Menu Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#dropdown_options">Dropdown Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#top_navigation_options">Top Navigation Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#default_page_header">Default Page Header</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#sticky_navigation">Sticky Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#create_pages">New Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#set_up_homepage">Homepage</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#set_up_one_page">One Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#set_up_contact_page">Contact Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#set_up_faqs_page">FAQ's Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#set_up side nav page">Side Navigation Page</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#blog">Blog Posts</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#blog_single_post_page">Blog Single Post Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#assigned_blog_page">Assigned Blog Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#blog_style">Blog styles</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#blog_single_style">Blog single post page styles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#portfolio_page">Portfolio Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#portfolio_items">Portfolio Items</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#portfolio_styles">Portfolio Styles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sliders</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#import_slider_dummy">Import Slider Dummy Data</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#assign_slider">Assign Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#codeless_slider">Codeless Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#revolution_slider">Revolution Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#layer_slider">Layer Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#flex_slider">Flex Slider</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Footer</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#footer_options2">Footer Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#footer_widgets">Add Widget To Footer</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#elements" class="dropdown-toggle" data-toggle="dropdown">Elements </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#vc_elements">Visual Composer elements</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#shortcodes">Shortcodes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#extras" class="dropdown-toggle" data-toggle="dropdown">Extras</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="main.html#woocommerce">WooCommerce</a>
+                            </li>
+                            <li class="page-scroll "><a href="main.html#wpml">WPML</a>
+                            </li>
+                            <li class="page-scroll "><a href="#mailchimp">MailChimp</a>
+
+                        </ul>
+                        </li>
+                        <li><a href="changelog.html">Changelog</a>
+                        </li>
+            </div>
+            <!--/.nav-collapse -->
+
+
+        </div>
+    </nav>
+
+    <!-- ========================= NAVIGATION BAR >> END ========================= -->
+
+
+
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--<div class='img-overlay'></div>-->
+                    <div class="intro-text text-center">
+                        <h1>Specular Wordpress Theme</h1>
+                        <p>The first real Multi-Site theme:
+                            <br />Not only home variations or demos but fully created sites for your ready to publish on the net</p>
+                        <br />
+                        <p><a class="btn btn-lg btn-outline" role="button">Download latest version</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+               
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+            <div class="container">
+              <div class="row">
+          <div class="col-md-6 changelog">
+               <h1>Update Changelog</h1>
+
+<!-- update change log-->
+<h2>Version 1.4</h2>
+
+
+<p><strong>Fixed:</strong> Some minor bugs</p>
+<p><strong>Fixed:</strong> Text block display</p>
+<p><strong>Fixed:</strong> Media Animation Effects</p>
+<p><strong>Fixed:</strong> Visual Composer FontAwesome icons display</p>
+<p><strong>Fixed:</strong> Images display in single portfolios</p>
+<p><strong>Fixed:</strong> FullScreen slider display on responsive</p>
+<p><strong>Updated:</strong> Visual Composer (vs. 4.7), WooCommerce files (vs. 2.4.6)</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>font (folder)</li>
+<li>css (folder)</li>
+<li>includes/core/codeless_elements.php</li>
+<li>vc_templates/media.php</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.7</h2>
+
+<p><strong>Fixed:</strong> Some minor bugs</p>
+<p><strong>Fixed:</strong> Issue with mega-menu and sub-menus</p>
+<p><strong>Added:</strong> Top position for portfolio item content, Mailto link in email social icon</p>
+<p><strong>Updated:</strong> Visual Composer (vs. 4.6.2), Revolution Slider (latest versions included)</p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>includes/view/blog (folder)</li>
+<li>includes/view/portfolio (folder)</li>
+<li>js/main.js</li>
+<li>includes/widgets/widgets.inc.php</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.6</h2>
+
+
+<p><strong>Fixed:</strong> Some minor bugs</p>
+<p><strong>Fixed:</strong> Read more string translation</p>
+<p><strong>Updated:</strong> Visual Composer, Revolution Slider (latest versions included)</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>includes/view/blog (folder)</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.4</h2>
+
+
+<p><strong>Fixed:</strong> Visual Composer layout (columns) issue</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>vc_templates/vc_columns.php</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.3</h2>
+
+
+<p><strong>Important Update </strong> Visual Composer 4.6.1</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins/js_composer.zip</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.2</h2>
+
+
+<p><strong>Fixed:</strong> Theme Compatibility for Visual Composer 4.6</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>vc_templates (folder)</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3.1</h2>
+
+
+<p><strong>Updated:</strong> Visual Composer</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.3</h2>
+
+
+<p><strong>Fixed:</strong> Some minor bugs</p>
+<p><strong>Fixed:</strong> Background color on blog page</p>
+<p><strong>Updated:</strong> Visual Composer, Revolution Slider (latest versions included)</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>includes/view/blog/loop-fullwidth.php</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.2.9</h2>
+
+
+<p><strong>Fixed:</strong> Some minor bugs</p>
+<p><strong>Added:</strong> Font size added as option for footer headings</p>
+<p><strong>Fixed:</strong> Social Sharing</p>
+<p><strong>Fixed:</strong> Images display in blog full-screen style</p>
+<p><strong>Added:</strong> Link option to Media element on Visual Composer</p>
+<p><strong>Updated:</strong> Visual Composer, Revolution Slider (latest versions included)</p>
+<p><strong>Fixed:</strong> Hyperlinks color on pages, posts</p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins (folder)</li>
+<li>includes/core/codeless_options</li>
+<li>includes/register/register_styles</li>
+<li>vc_templates/media.php</li>
+<li>includes/core/codeless_elements.php</li>
+<li>includes/view/blog/loop-index.php</li>
+<li>includes/view/blog/loop-fullscreen.php</li>
+</ul>
+<p></p>
+
+
+<h2>Version 1.2.8</h2>
+
+
+<p><strong>Fixed:</strong> One page Links problem with simple sections.</p>
+<p><strong>Fixed:</strong> iPad Scroll Page with Codeless Slider</p>
+<p><strong>Fixed:</strong> Submenu multi-level problem</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>js/main.js</li>
+</ul>
+<p></p>
+
+<h2>Version 1.2.6</h2>
+
+
+<p><strong>Added:</strong> Select Category for Staff Carousel Element</p>
+<p><strong>Updated:</strong> Visual Composer</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+
+<h2>Version 1.2.5</h2>
+
+
+<p><strong>Fixed:</strong> Shop Category Page Header</p>
+<p><strong>Fixed:</strong> Gallery Carousel Slider in Responsive</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+
+<h2>Version 1.2.4</h2>
+
+
+<p><strong>Fixed:</strong> Import Process JS</p>
+<p><strong>Updated:</strong> Redux &amp; Metaboxes</p>
+<p><strong>Added:</strong> Tabs - Change Default</p>
+<p><strong>Fixed:</strong> Icon Select Box on VC</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+<h2>Version 1.2.3</h2>
+
+
+<p><strong>Added:</strong> New Business Demo</p>
+<p><strong>Fixed:</strong> Submenu Third Level</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+<h2>Version 1.2.1</h2>
+
+
+<p><strong>Fixed:</strong> Testimonial Carousel with different height</p>
+<p><strong>Fixed:</strong> Envato Auto Update Plugin Error</p>
+<p><strong>Fixed:</strong> Price list button link</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+<h2>Version 1.2</h2>
+
+<p><strong>UPDATED:</strong> Visual Composer now compatible with 4.1</p>
+<p><strong>Added:</strong> Auto Theme Updater</p>
+<p><strong>Added:</strong> Seo plugins Compatible</p>
+<p><strong>Added:</strong> Dual Sidebars Options</p>
+<p><strong>Added:</strong> Child Theme Support</p>
+<p><strong>Added:</strong> Compatible with Disqus</p>
+<p><strong>Added:</strong> Mailchimp Integration</p>
+<p><strong>Added:</strong> Infinite Scroll for Blog Posts</p>
+<p><strong>Added:</strong> Options for Blog Info details</p>
+<p><strong>Added:</strong> Instagram Social Icon</p>
+<p><strong>Added:</strong> BBM for contact info shortcode</p>
+<p><strong>Fixed:</strong> Mobile Menu Issue</p>
+<p><strong>Fixed:</strong> Services Small supports shortcodes into description</p>
+<p><strong>Fixed:</strong> Codeless Slider Bug in responsive fixed</p>
+<p><strong>Fixed:</strong> Visual Composer Responsive Options</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+
+</ul>
+<p></p>
+
+
+<h2>Version 1.1.1</h2>
+
+<p><strong>UPDATED:</strong> Visual Composer now compatible with 4.1</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>plugins/js_composer.zip</li></ul>
+<p></p>
+
+
+<h2>Version 1.1</h2>
+
+<p><strong>Added:</strong> NEW Demo Minimal 2</p>
+<p><strong>Added:</strong> New Slider (Carousel) with opacity and title, desc</p>
+<p><strong>Added:</strong> Portfolio Item Like</p>
+<p><strong>Added:</strong> Testimonial select by category</p>
+<p><strong>Fixed:</strong> Fullscreen Single Blog Issue</p>
+<p><strong>Fixed:</strong> Header Cart Style Fixed</p>
+<p><strong>Added:</strong> Option for remove responsive menu</p>
+<p><strong>Added:</strong> Option to make visible extra navigation in responsive</p>
+<p><strong>Fixed:</strong> Price List Button Text (Purchase)</p>
+<p><strong>Fixed:</strong> Header 11 (Logo in center) fixed in responsive</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>header.php</li>
+<li>functions.php</li>
+<li>js/main.js</li>
+<li>css/bootstrap-responsive.css</li>
+<li>vc_templates/price_list.php</li>
+<li>vc_templates/testimonial_carousel.php</li>
+<li>vc_templates/testimonial_cycle.php</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/core/codeless_slideshow.php</li>
+<li>includes/core/codeless_elements.php</li>
+<li>includes/register/register_style.php</li>
+<li>includes/view/portfolio/single-container.php</li>
+<li>includes/view/portfolio/single-floating.php</li>
+<li>includes/view/portfolio/single-gallery.php</li>
+<li>includes/view/portfolio/single-fullwidth.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.14</h2>
+
+<p><strong>Added:</strong> Option to disable featured image in Pages / Posts (Single)</p>
+<p><strong>Added:</strong> Option for overwrite the default post / page layout (sidebars)</p>
+<p><strong>Added:</strong> Option for overall pages layout (sidebars)</p>
+<p><strong>Added:</strong> Option to add upcoming date to events.</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_metaboxes.php</li>
+<li>page.php</li>
+<li>includes/view/sliders_output.php</li>
+<li>includes/view/blog/loop-index.php</li>
+<li>vc_templates/recent_news.php</li>
+<li>includes/core/codeless_options.php</li>
+<li>single.php</li>
+<li>template-blog.php</li>
+
+</ul>
+<p></p>
+
+<h2>Version 1.0.13</h2>
+
+<p><strong>Fixed:</strong> Import from online builder</p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>admin/inc/fields/codeless_import (entire folder)</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.12</h2>
+
+<p><strong>Added:</strong> NEW DEMO BUSINESS CORPORATE</p>
+<p><strong>Added:</strong> New Header 12 (Business Corporate)</p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_options.php</li>
+<li>header.php</li>
+<li>includes/register/register_style.php</li>
+<li>includes/register/register_shortcodes.php</li>
+<li>includes/register/register_sidebars.php</li>
+<li>css/shortcodes.css</li>
+<li>css/bootstrap-responsive.css</li>
+
+</ul>
+<p></p>
+
+<h2>Version 1.0.11</h2>
+
+<p><strong>Added:</strong> Enable comments on portfolio items.</p>
+<p><strong>Added:</strong> Social Icons (Youtube, Email)</p>
+<p><strong>Fixed:</strong> Removed Animation from Text Block element. Use Column animation instead. </p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_metaboxes.php</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/core/codeless_elements.php</li>
+<li>includes/view/portfolio/single-container.php</li>
+<li>includes/view/portfolio/single-fullwidth.php</li>
+<li>includes/view/portfolio/single-floating.php</li>
+<li>includes/view/portfolio/single-gallery.php</li>
+<li>includes/widgets/codeless_socialwidget.php</li>
+
+</ul>
+<p></p>
+
+<h2>Version 1.0.10</h2>
+
+<p><strong>Fixed:</strong> Fullscreen sliding JS error</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>functions-specular.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.9</h2>
+
+<p><strong>Fixed:</strong> Portfolio Grayscale style</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/view/portfolio/loop-grid.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.8</h2>
+
+<p><strong>Updated:</strong> Metaboxes</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>admin/loader/extensions/metaboxes (entire folder)</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.7</h2>
+
+<p><strong>Added:</strong> Option for Agency Header Colored Border Top</p>
+
+<p><strong>Files:</strong>
+</p><ul><li>style.css</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/register/register_styles.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.6</h2>
+
+<p><strong>Added:</strong> Missing dummy data for new demos</p>
+<p><strong>Fixed:</strong> Menu issue with Medicine Demo</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/register/register_styles.php</li>
+<li>css/bootstrap-responsive.css</li>
+<li>/includes/dummy_data (entire folder)</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.5</h2>
+
+<p><strong>Added:</strong> Linkedin Social Link</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/widgets/codeless_socialwidget.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.4</h2>
+
+<p><strong>Added:</strong> Custom Link in Portfolio Items</p>
+<p><strong>Fixed:</strong> Codeless Slider in IPad Mini</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>js/main.js</li>
+<li>style.css</li>
+<li>includes/view/portfolio/loop-grid.php</li>
+<li>includes/view/portfolio/loop-masonry.php</li>
+<li>includes/core/codeless_metaboxes.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.3</h2>
+
+<p><strong>Fixed:</strong> sticky header font color on Codeless Slider</p>
+<p><strong>Added:</strong> Custom CSS</p>
+<p><strong>Added:</strong> Show Logo only on scroll (sticky)</p>
+<p><strong>Added:</strong> Add image Element on Codeless Slider</p>
+<p><strong>Added:</strong> New Portfolio Style with Chrome bar like in presentation page</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>js/main.js</li>
+<li>includes/register/register_.style.php</li>
+<li>includes/core/codeless_options.php</li>
+<li>style.css</li>
+<li>functions_specular.php</li>
+<li>includes/codeless_slider/codeless_slider_options.php</li>
+<li>includes/codeless_slider/codeless_slider.php // Added: Add image Element on Codeless Slider</li>
+<li>includes/view/portfolio/loop-grid.php</li>
+<li>includes/view/portfolio/loop-masonry.php</li>
+<li>includes/core/codeless_metaboxes.php</li>
+<li>img/chrome.png</li>
+<li>includes/core/codeless_elements.php</li>
+<li>functions.php</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.2 IMPORTANT Update</h2>
+
+<p><strong>Fixed:</strong> Footer Widget Area</p>
+<p><strong>Updated:</strong> Framework</p>
+<p><strong>Fixed:</strong> Hover on Services Medium</p>
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/register/register_sidebars.php</li>
+<li>admin/ (entire folder)</li>
+</ul>
+<p></p>
+
+<h2>Version 1.0.1</h2>
+
+<p><strong>Added:</strong> Social Shares in posts</p>
+<p><strong>Updated:</strong> Dummy Data</p>
+
+
+<p><strong>Files:</strong>
+</p><ul>
+<li>style.css</li>
+<li>includes/core/codeless_options.php</li>
+<li>includes/view/loop-index.php</li>
+<li>js/main.js</li>
+<li>includes/dummy_data (entire folder)</li>
+</ul>
+<p></p>
+
+<!--end update change log-->
+
+
+               <!--<ol >
+                  <li >Download entire theme pack with docs from http://themeforest.net/downloads</li>
+                  <li >Install WordPress</li>
+                  <li >Install SPECULAR theme</li>
+                  <li >Install required plugins
+                    
+                        </li>
+                  <li >Import dummy content</li>
+                  <li >Configure menu from Dashboard → Appearance → Menu</li>
+                  
+                </ol>-->
+              </div>
+
+             
+            </div>
+          
+            
+        </div>
+    <!-- ========================= MAIN CONTAINER >> END ========================= -->
+
+    <footer class="paddings75_top_bottom handheld_centering">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-8">
+                    <div class="navigation">
+                        <div class="row">
+                            <nav>
+                                <ul>
+                                    <li><a href="http://codeless.co" class="active">Home</a>
+                                    </li>
+
+                                    <li><a href="http://codeless.co/presentation">Themes</a>
+                                    </li>
+
+                                    <li><a href="http://codeless.co/support/?page_id=4207">Policy</a>
+                                    </li>
+
+                                    <li><a href="http://support.codeless.co">Support</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-4">
+                    <div class="navigation">
+                        <div class="row">
+                            <div class="copyright">Copyright 2015. CODELESS Limited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+    </footer>
+    <!-- CREDITS >> END -->
+
+    <!-- loading javascripts -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+
+    <!-- init javascripts -->
+    <script src="assets/js/init.js"></script>
+    <script type="text/javascript">
+    $(".nav li").each(function() {
+        $(this).click(function(e) {
+            $(".nav .active").removeClass("active");
+            $(this).addClass("active");
+        })
+    });
+
+    /*fancybox js*/
+    $(document).ready(function() {
+
+        // Change title type, overlay closing speed
+        $(".fancybox-effects-a").fancybox({
+            helpers: {
+                title: {
+                    type: 'outside'
+                },
+                overlay: {
+                    speedOut: 0
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

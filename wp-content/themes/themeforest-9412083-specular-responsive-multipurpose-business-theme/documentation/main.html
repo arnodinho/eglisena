@@ -1,0 +1,3241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstraped Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="author" content="Autor">
+
+    <!-- loading the css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+    <style type="text/css">
+    </style>
+
+
+    <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!-- Various Icons (Favicon, Touch Icon,... -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+</head>
+
+
+
+<body id="top" class="index" data-spy="scroll" data-target=".navbar-nav">
+
+    <!-- ========================= NAVIGATION BAR >> START ========================= -->
+    <!-- Fixed navbar -->
+    <!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <col-md- class="sr-only">Toggle navigation</col-md->
+            <col-md- class="icon-bar"></col-md->
+            <col-md- class="icon-bar"></col-md->
+            <col-md- class="icon-bar"></col-md->
+          </button>
+         <!-- <a class="navbar-brand" href="#">Specular</a>-->
+    <!--</div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a href="#top"></a>
+            </li>-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#page-top">Start Bootstrap</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll "><a href="index.html">Home</a>
+                    </li>
+                    <li class="page-scroll dropdown active"><a href="#about" class="dropdown-toggle" data-toggle="dropdown">Get Started</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#general_information">General Information</a>
+                            </li>
+                            <li class="page-scroll "><a href="#requirements">Requirements</a>
+                            </li>
+                            <li class="page-scroll "><a href="#things_to_do">Things to do</a>
+                            </li>
+                            <li class="page-scroll "><a href="#support">Support Forum</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#about" class="dropdown-toggle" data-toggle="dropdown">Installation</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#install_wp">Install Wordpress</a>
+                            </li>
+                            <li class="page-scroll "><a href="#theme_install">Theme Installation</a>
+                            </li>
+                            <li class="page-scroll "><a href="#plugin_install">Plugin Installation</a>
+                            </li>
+                            <li class="page-scroll "><a href="#update_theme">Update Theme</a>
+                            </li>
+                            <li class="page-scroll "><a href="#import_demo">Import Demo Content</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Options</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#general_options">General Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#header_options1">Header Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#styling_options">Styling Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#typography_options">Typography Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#footer_options1">Footer Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#blog_config">Blog Configuration</a>
+                            </li>
+                            <li class="page-scroll "><a href="#portfolio_config">Portfolio Configuration</a>
+                            </li>
+                            <li class="page-scroll "><a href="#layout">Layout</a>
+                            </li>
+                            <li class="page-scroll "><a href="#clients">Clients</a>
+                            </li>
+                            <li class="page-scroll "><a href="#social-media">Social Media</a>
+                            </li>
+                            <li class="page-scroll "><a href="#custom_sidebars">Custom Sidebars</a>
+                            </li>
+                            <li class="page-scroll "><a href="#demo_export">Demo / Export</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Header</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#setup_header">Setup Header</a>
+                            </li>
+                            <li class="page-scroll "><a href="#header_options2">Header Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#menu_options">Menu Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#dropdown_options">Dropdown Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#top_navigation_options">Top Navigation Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#default_page_header">Default Page Header</a>
+                            </li>
+                            <li class="page-scroll "><a href="#sticky_navigation">Sticky Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#create_pages">New Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#set_up_homepage">Homepage</a>
+                            </li>
+                            <li class="page-scroll "><a href="#set_up_one_page">One Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#set_up_contact_page">Contact Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#set_up_faqs_page">FAQ's Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#set_up side nav page">Side Navigation Page</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#blog">Blog Posts</a>
+                            </li>
+                            <li class="page-scroll "><a href="#blog_single_post_page">Blog Single Post Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#assigned_blog_page">Assigned Blog Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#blog_style">Blog styles</a>
+                            </li>
+                            <li class="page-scroll "><a href="#blog_single_style">Blog single post page styles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#portfolio_page">Portfolio Page</a>
+                            </li>
+                            <li class="page-scroll "><a href="#portfolio_items">Portfolio Items</a>
+                            </li>
+                            <li class="page-scroll "><a href="#portfolio_styles">Portfolio Styles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sliders</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#import_slider_dummy">Import Slider Dummy Data</a>
+                            </li>
+                            <li class="page-scroll "><a href="#assign_slider">Assign Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="#codeless_slider">Codeless Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="#revolution_slider">Revolution Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="#layer_slider">Layer Slider</a>
+                            </li>
+                            <li class="page-scroll "><a href="#flex_slider">Flex Slider</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" page-scroll dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Footer</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#footer_options2">Footer Options</a>
+                            </li>
+                            <li class="page-scroll "><a href="#footer_widgets">Add Widget To Footer</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#elements" class="dropdown-toggle" data-toggle="dropdown">Elements </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#vc_elements">Visual Composer elements</a>
+                            </li>
+                            <li class="page-scroll "><a href="#shortcodes">Shortcodes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" page-scroll dropdown"><a href="#extras" class="dropdown-toggle" data-toggle="dropdown">Extras</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll "><a href="#woocommerce">WooCommerce</a>
+                            </li>
+                            <li class="page-scroll "><a href="#wpml">WPML</a>
+                            </li>
+                            <li class="page-scroll "><a href="#mailchimp">MailChimp</a>
+
+                        </ul>
+                        </li>
+                        <li><a href="changelog.html">Changelog</a>
+                        </li>
+            </div>
+            <!--/.nav-collapse -->
+
+
+        </div>
+    </nav>
+
+    <!-- ========================= NAVIGATION BAR >> END ========================= -->
+
+
+
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--<div class='img-overlay'></div>-->
+                    <div class="intro-text text-center">
+                        <h1>Specular Wordpress Theme</h1>
+                        <p>The first real Multi-Site theme:
+                            <br />Not only home variations or demos but fully created sites for your ready to publish on the net</p>
+                        <br />
+                        <p><a class="btn btn-lg btn-outline" role="button">Download latest version</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="general_information">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Getting Started</h1>
+                    <h2>General Information</h2>
+                    <p>We would like to thank you for purchasing Specular! Before you install the theme please get through this documentation. Here you will find all the necessary information you need to fully set up Specular theme.
+                        <br>Specular is a Wordpress theme, so it need to be installed into a wordpress installation. If you haven't installed Wordpress yet, please read the documentation part about "things to do" and "wordpress installation". If the documentation is not enough please watch the video tutorials or write at our support forum.
+                        <br>Thank You, we hope you will have a great experience using Specular!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="requirements">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Requirements</h2>
+                    <h3>Wordpress Requirements</h3>
+                    <ul>
+                        <li>PHP 5.3.0 or greater</li>
+                        <li>MySQL 5.0 or greater</li>
+                        <li>Wordpress 3.8.1+</li>
+                        <li>The mod_rewrite Apache module (optional for SEO and user-friendly links)</li>
+                    </ul>
+                    <p>For a correct use of Specular, please ensure that your web host has the proper requirements. Also keep in mind to always create secure passwords for FTP and Database.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="things_to_do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Things to do</h2>
+                    <ul>
+                        <li>Checking to ensure that you and your web host have the minimum requirements to run WordPress.</li>
+                        <li>Download the latest release of WordPress from official <a href="http://www.wordpress.org">WordPress website</a>
+                        </li>
+                        <li>Unzip the downloaded file.</li>
+                        <li>Wordpress Installation</li>
+                        You can download latest Wordpress version from wordpress.org. If you don't know what Wordpress is or have some difficulties with Wordpress installation, you can try to contact your service provider support.
+                        <br/>
+                        <br/>Download and unzip the WordPress package if you haven't already. Create a database for WordPress on your web server, as well as a MySQL user who has all privileges for accessing and modifying it. Rename the wp-config-sample.php file to wp-config.php. Open wp-config.php in a text editor and fill in your database details as explained in Editing wp-config.php to generate and use your secret key password.
+                        <br/>
+                        <br/>Upload the WordPress files in the desired location on your web server.
+                        <br/>Run the WordPress installation script by accessing wp-admin/install.php in a web browser. If you installed WordPress in the root directory, you should visit: http://example.com/wp-admin/install.php If you installed WordPress in its own subdirectory called blog, for example, you should visit:http://example.com/blog/wp-admin/install.php
+                        <br />Follow the installation steps:
+                        <a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <h3>What's Included</h3>
+                    <br/>
+                    <ul>
+                        <li>
+                            <strong>Specular Theme Folder</strong>- contains Specular.zip, the folder you need to upload to your wordpress installation.</li>
+                        <li>
+                            <strong>Documentation</strong>- the folder with all needed documentation files, for you to quickly became familiar with the theme.</li>
+                        <li>
+                            <strong>Slider Documentation</strong>- contains the developer documentation for Layer Slider, Revolution Slider, Flexslider and Codeless Slider</li>
+                        <li>
+                            <strong>Licensing Folder</strong>- contains the licensing files, this is not the purchase code that you need to download from Themeforest.</li>
+                    </ul>
+                    <div class="clear">
+                        <img src="assets/img/download_theme.png" width="100%">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="support">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Support Forum</h2>
+                    All of our items come with free support, and we have a dedicated support forum to handle your requests. Support is limited to questions regarding the theme’s features or problems with the theme. We are not able to provide support for code customizations or third-party plugins. If you need help with anything other than minor customizations of your theme then you should enlist the help of a developer.
+                    <br />
+                    <br />
+                    <ul>
+                        <li>
+                            <strong>Step 1 - <a href="http://support.codeless.co">Click Here To Create An Account</a>
+                            </strong>, you will need your
+                            <strong>Theme Forest purchase code</strong> which can only be received after buying the theme from Themeforest.net.</li>
+                        <li>
+                            <strong>Step 2</strong>- You need to enter your Themeforest Purchase code, e-mail and password. Your forum username will be the same username that purchased the theme on Themeforest.</li>
+                        <li>
+                            <strong>Step 3</strong>- Once you signed up, you need to sign into the forum with your new account to start using the forum. Please use search field to previously check for answers, before deciding to write yours.</li>
+                        <li>
+                            <strong>Step 4</strong>- To create new topic, click the "
+                            <strong>Create A New Topic</strong>" button in the right sidebar.</li>
+                        <p>Here is a screen shoot to show you how to find the purchase code.</p>
+                        <img src="assets/img/purchase_code.png">
+                    </ul>
+                    <br>
+                    <h3>Before You Post On Forum</h3>
+                    <div class="bs-callout bs-callout-warning">Note: In order to always have a fast and successful search in our forum, we require for you to follow these simple steps before posting a new topic. This is for the benefit of everyone and it helps the forum become more efficient. It's very important and we ask that everyone who posts to keep these in mind.</div>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong>- Always check the
+                            <strong>Documentation</strong>. Most of your answers will be found there.</li>
+                        <li>
+                            <strong>Step 2</strong>- Always perform a
+                            <strong>Forum Search</strong> before deciding to start a new topic. Most common issues are already brought up and answered.</li>
+                        <li>
+                            <strong>Step 3</strong>- If you can't still find an answer to your problem, please post a new topic. Be sure to be as descriptive as possible. If you want you can send in a private reply your wp or ftp credentials. In most cases this saves a lot of time for both parties.</li>
+                        <li>
+                            <strong>Step 4</strong>- Last,
+                            <strong>patiently wait!</strong> We will try to respond ASAP. Please keep in mind that we answer threads from old to new. So, rewriting the same question will only increase the responding time!</li>
+                    </ul>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install_wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Installation</h1>
+                    <h2>Install Wordpress</h2>
+                    <br />
+                    <p>For installing wordpress either locally or in a web host, please see more detailed information <a href="http://codex.wordpress.org/Installing_WordPress">here!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="theme_install">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Theme Installation</h2>
+                    Follow the steps below to install Specular from Wordpress admin panel:
+                    <br />
+                    <strong>Step 1</strong>- Navigate to
+                    <strong>Appearance > Themes.</strong>
+                    <br />
+                    <strong>Step 2</strong>- Click
+                    <strong>Install Themes</strong>and than
+                    <strong>Upload</strong>.
+                    <br />
+                    <strong>Step 3</strong>- Navigate to the "Specular.zip" folder in your computer, and click
+                    <strong>Install Now</strong>.
+                    <br />
+                    <strong>Step 4</strong>- Now you need to activate the uploaded theme. To do so, go to
+                    <strong>Appearance > Themes</strong> and
+                    <strong>Activate</strong>.
+                    <br />
+                    <strong>Step 5</strong>- You will then see a notification message to activate the required and recommended plugins: LayerSlider WP, MailChimp List Subscribe Form, Revolution Slider, User Avatar, WPBakery VIsual Composer and WP Retina 2x. Follow the steps to install and activate each plugin.
+                    <div class="bs-callout bs-callout-warning">Common Install Error: <i>Are You Sure You Want To Do This?
+                  If you get the "Are You Sure You Want To Do This"</i> message when installing Specular.zip file via WordPress, it means you have an upload file size limit. Install the theme via FTP if this happens, or call your hosting company and ask them to increase the limit.</div>
+                    <h3>FTP Installation</h3>
+                    <p>Follow the steps below to install via FTP.</p>
+                    <strong>Step 1</strong>– Log into your hosting space via an FTP software
+                    <br />
+
+                    <strong>Step 2</strong>– Unzip the
+                    <strong>Specular.zip</strong>file and
+                    <strong>ONLY</strong> use the extracted
+                    <strong>Specular</strong> theme folder
+                    <br />
+
+                    <strong>Step 3</strong>– Upload the extracted
+                    <strong>Specular</strong>theme folder into
+                    <strong>wp-content > themes folder</strong>
+                    <br />
+
+                    <strong>Step 4</strong>– Activate the newly installed theme. Go to
+                    <strong>Appearance > Themes</strong> and activate it.
+                    <br />
+
+                    <strong>Step 5</strong>– Then you will see a notification message to activate the required & recommended plugins: LayerSlider WP, MailChimp List Subscribe Form, Revolution Slider, User Avatar, WPBakery VIsual Composer and WP Retina 2x. Follow the steps to install and activate each plugin.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plugin_install">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Plugin Installation</h2>
+                    <p>Specular has several plugins that you need to install in order for the theme to be fully equipped. You will have several notices during installation and after, which will instruct you, which plugin to install. The plugins you need to install are: LayerSlider WP, MailChimp List Subscribe Form, Revolution Slider, User Avatar, WPBakery VIsual Composer and WP Retina 2x</p>
+                    <h3>Included plugins with the installation folder</h3>
+                    <ul>
+                        <li>
+                            <strong>Layer Slider</strong>- this is a premium slider plugin created by Kreatura.</li>
+                        <li>
+                            <strong>Revolution Slider</strong>- this is a premium slider plugin created by ThemePunch.</li>
+                        <li>
+                            <strong>Visual Composer</strong>- is a premium, drag and drop front-end and back-end page builder plugin that will save you tons of time while working on your site content.</li>
+                    </ul>
+                    <h3>Additioal plugins</h3>
+                    <ul>
+                        <li>
+                            <strong>WooCommerce</strong>- this is a free plugin. If you are creating an online shop, this is the best plugin to use. And it's fully integrated with Specular.</li>
+                        <li>
+                            <strong>Contact Form 7</strong>- this is a free plugin. It is used for forms on various pages. It is fully integrated with Specular theme.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="update_theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Update theme</h2>
+                    <p>There is one way to update your theme. Before you update, it is best practice to always check our update notes. Also we strongly recommend you to make a backup of your previous theme folder. See the information below for more.</p>
+                    <strong><i>Update Steps:</i>
+                    </strong>
+                    <p>First you need to manually download the new theme package from your Themeforest account. Once you have the new theme package, you can choose to upload the theme via WordPress or via FTP. Please see the information below for how to download new files, and install options.</p>
+
+                    <h3>Phase One</h3>
+                    <h4>How to download new theme file's from ThemeForest</h4>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong>– Log-in to your Themeforest account and navigate to your Downloads tab. Find the "Specular" theme purchase.</li>
+                        <li>
+                            <strong>Step 2</strong>– Download the "Installable WordPress Theme" which is just the WordPress theme, or choose the "Main Files". This is the full package, containing the theme folder, documentation folder, licence and purchase code.</li>
+                        <li>
+                            <strong>Step 3</strong>– You can install the update via FTP or via WordPress. Please find directions for both methods below.</li>
+                    </ul>
+
+                    <h3>Phase Two</h3>
+                    <h4>Updating theme via FTP</h4>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong> – Go to
+                            <strong>"wp-content > themes"</strong> location and backup your "Specular" theme folder by saving it to your computer, or you can choose to simply delete it. Your content will not be lost.</li>
+                        <li>
+                            <strong>Step 2</strong> – Retrieve the newly downloaded "Specular.zip" file from your hard-drive and extract the file to get the "Specular" theme folder.</li>
+                        <li>
+                            <strong>Step 3</strong> – Drag and drop the new "Specular" theme folder into
+                            <strong>"wp-content > themes"</strong> location. Choose to "Replace" the current one if you did not delete it.</li>
+                        <li>
+                            <strong>Step 4</strong> – Lastly, update the included plugins. You will see in your wordpress dashboard, a notification message letting you know the plugins have a new version and need to be updated. Follow the on screen steps.</li>
+                    </ul>
+                    <h4>Updating theme via Wordpress</h4>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong> – Deactivate the current "Specular" theme in the
+                            <strong>"Appearance > Themes"</strong> section by simply activating a different theme. Once you activate a different theme, you can delete the Specular theme. Your data is saved in the database so the content will not be lost!</li>
+                        <li>
+                            <strong>Step 2</strong> – Retrieve the "Specular.zip" file from your new Themeforest download. If you downloaded the "Main Files" from Themeforest, then just unzip the archive file you received. Retrieve the "Specular.zip" inside of it.</li>
+                        <li>
+                            <strong>Step 3</strong> – In the
+                            <strong>"Appearance > Themes"</strong> section, click on the "Install Themes" tab at the top and choose to upload the "Specular.zip" file.</li>
+                        <li>
+                            <strong>Step 4</strong>– After the upload is done, activate the theme.</li>
+                        <li>
+                            <strong>Step 5</strong>– Last, update the included plugins. You will see a notification message letting you know the plugins have a new version and need to be updated. Follow the on screen steps.</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="import_demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Import demo content</h2>
+                    <div class="col-md-12">
+						One important feature is importing dummy data. Specular comes with a new and innovative feature. You have already build-in 20+ website demo. Just choose the one that is more suitable for your business and in a few click it'll be all done! <br> Find this option in <i>Specular > Import/Export</i> menu in the Dashboard.
+                        <img src="assets/img/import-dummydata.png" alt="Default Page Header" width='100%'>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="general_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Theme Options</h1>
+                    <br />
+
+                    <p>Specular has an advanced and complete Theme Options panel. It's organized in tabbed sections, where each option has a clear description on it's function.
+                        <br>In this documentation you will find an explanation to all the available options.
+                        <br>Find Specular theme options at your Wordpress admin panel -> Specular, in the main WP left menu. Note: We will be add more options with future theme updates.
+
+                    </p>
+                    <br />
+
+                    <h2>General Options</h2>
+                    <br />In this section you can customize basic options like the logo, responsive layout, activate sticky header, select the special pages , add custom CSS & Javascript code.. etc.
+                    <hr>
+                    <br />
+                    <img src="assets/img/general_options.png" alt="General Options" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="header_options1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Header Options</h2>
+                    <br />The section where to configure your header, Main menu, Top navigation options, Page Headers options and Dropdown options.
+                    <hr>
+                    <br />
+                    <img src="assets/img/header_options.png" alt="Header Options" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="styling_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Styling Options</h2>
+                    <br />Change partially or completely the theme's style. In this section you will find all styling configurations for primary color, fonts color.. etc for every element available in the theme.
+                    <hr>
+
+                    <img src="assets/img/styling-options.png" alt="Default Page Header" width='100%'>
+
+                    <br />
+                    <br />
+                    <div class="col-md-6">
+                        <div class="panel-group" id="accordion">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                              1. Default Page Header
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+
+                                        Here you can configure the default page header styles and typography and set page header design style.
+
+                                        <br>
+                                        <br>
+                                        <a class="fancybox-effects-a" href="assets/img/default_page_header.png" title="Default Page Header">
+                                            <img src="assets/img/default_page_header.png" alt="Default Page Header" width="100%" />
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                               2. Footer Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                        At this section you can select the footer styles like footer heading typography, font colour, links font colour, footer background and copyright background colour.
+                                        <br>
+                                        <br>
+
+                                        <a class="fancybox-effects-a" href="assets/img/footer-styling.png" title="Footer Styling">
+                                            <img src="assets/img/footer-styling.png" alt="Footer Styling" width="100%" />
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                               3. Blog Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                        Here you can select the blog title typography, blog info list typography, blog info list icon size, active timeline or masonry box shadow, active timeline or masonry background colour and fullscreen blog content box background.
+                                        <br>
+                                        <br>
+
+                                        <a class="fancybox-effects-a" href="assets/img/blog-styling.png" title="Blog Styling">
+                                            <img src="assets/img/blog-styling.png" alt="Blog Styling" width="100%" />
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                               4. Sidebar Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Here you can set the sidebar styling: widget title styles, widget title margin bottom, widget margin bottom, sidebar tag-cloud background, sidebar tag-cloud font colour.
+                                        <br>
+                                        <br>
+
+                                        <a class="fancybox-effects-a" href="assets/img/sidebar-styling.png" title="Sidebar Styling">
+                                            <img src="assets/img/sidebar-styling.png" alt="" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                               5. Sliders Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        In this section you can set the background of Codeless slider wrapper background colour.
+                                        <br>
+                                        <br>
+
+                                        <a class="fancybox-effects-a" href="assets/img/slider-styling.png" title="Slider Styling">
+                                            <img src="assets/img/slider-styling.png" alt="Slider Styling" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--styling column1-->
+                    <div class="col-md-6">
+                        <div class="panel-group" id="accordion1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                               6. Filters Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Her you can configure the Portfolio filter & FAQ filter styles: typography, background colour, portfolio filter full-width item colour and portfolio filter full-width item hover colour.
+                                        <br>
+                                        <br>
+
+                                        <a class="fancybox-effects-a" href="assets/img/filters-styling.png" title="Filters Styling">
+                                            <img src="assets/img/filters-styling.png" alt="Filters Styling" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
+                               7. Portfolio Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        In this section you can configure the portfolio styling. Like, Portfolio Overlay Background colour, Portfolio Overlay Title Typography, Portfolio Overlay Subtitle Typography, Grayscale background, Grayscale Title Typography, Grayscale subtitle colour, Portfolio basic overlay background, Portfolio basic icon colour, Portfolio basic title typography and Portfolio basic subtitle typography.
+                                        <br>
+                                        <br>
+                                        <a class="fancybox-effects-a" href="assets/img/portfolio-styling.png" title="Portfolio Styling">
+                                            <img src="assets/img/portfolio-styling.png" alt="Portfolio Styling" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseEight">
+                              8.  Elements Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Here you can configure the elements styling: Toggle title typography, activated toggle font color, block title element (column) title, block title element subtitle, block title element (section) title, animated counter typography, testimonial typography, textbar title typography, contact form elements border.
+                                        <br>
+                                        <br>
+                                        <a class="fancybox-effects-a" href="assets/img/elements-styling.png" title="Elements Styling">
+                                            <img src="assets/img/elements-styling.png" alt="" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseNine">
+                             9.  Buttons Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Here you can configure the styling of buttons. You can select: overall button style, overall button typography, overall button background, overall button border, overall button hover font color, overall button background, overall button hover border, light button font color, light button background, light button border, light button hover font color, light button hover background, light button hover border.
+                                        <br>
+                                        <br>
+                                        <a class="fancybox-effects-a" href="assets/img/buttons-styling.png" title="Buttons Styling">
+                                            <img src="assets/img/buttons-styling.png" alt="Buttons Styling" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTen">
+                               10. Shop Styling
+                              </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        In this section you can configure your shop's styling. Select the appropriate font style for single product title. Choose an overlay for the items.
+                                        <br>
+                                        <br>
+                                        <a class="fancybox-effects-a" href="assets/img/shop-styling.png" title="Shop Styling">
+                                            <img src="assets/img/shop-styling.png" alt="Shop Styling" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--styling column2-->
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="typography_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Typography Options</h2>
+                    <hr>
+                    <p>Here you can set the body and headings font typography and font sizes.</p>
+                    <br>
+                    <img src="assets/img/typography_options.png" alt="Typography Options" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_options1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Footer Options</h2>
+                    <br />
+                    <p>Styling of footer layout and footer's text (body, links, background, copyrights) etc.</p>
+                    <br>
+                    <img src="assets/img/footer_options.png" alt="Footer Options" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog_config">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Blog Configuration</h2>
+                    <br />
+                    <p>Styling of the blog: blog style, layout, single post layout and active post like.</p>
+                    <br>
+                    <img src="assets/img/blog-config.png" alt="Blog Configuration" width='100%'>
+                    <br>
+                    <br>Specular has many blog styles, you can select the blog style that fits your website.
+                    <a href="#blog_style">
+                        <strong> Here</strong>
+                    </a> is a list of different blog styles.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio_configuration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Portfolio Configuration</h2>
+                    <br />
+                    <p>Here you can set the portfolio slug and portfolio custom fields parameters.</p>
+                    <br>
+                    <img src="assets/img/portfolio-config.png" alt="Portfolio Configuration" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Layout</h2>
+                    <br />
+                    <p>Here you can set the overall site layout,like page container width in both percentage or pixels. The extra side navigation and it's position. The page builder row margin bottom and inner page content padding.</p>
+                    <br>
+                    <img src="assets/img/layout.png" alt="Layout" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Clients</h2>
+                    <br />
+                    <p>Here you can add/edit clients for both the light and the dark background versions.</p>
+                    <br>
+                    <img src="assets/img/clients.png" alt="Clients" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Social Media</h2>
+                    <br />
+                    <p>Add and/or edit the social media links and icons here.</p>
+                    <br>
+                    <img src="assets/img/social.png" alt="Social Media" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="custom_sidebars">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Custom Sidebars</h2>
+                    <br />
+                    <h3>Assign Sidebar to pages</h3>
+                    <p>Specular theme allows you to create an unlimited amount of sidebars. You can customize any page to have an unique sidebar. This is possible by creating custom sidebars for the pages you want at Customs Sidebars section.</p>
+                    <br />
+                    <img src="assets/img/custom_sidebars.png" alt="Custom Sidebars" width='100%'>
+                    <h3>Add Widgets To Sidebar</h3>
+
+                    <p>After you create the sidebar, it will automatically show in the sidebars list in
+                        <strong>Appearance > Widgets</strong>. Add as widgets to it as you need. It will automatically show in the specified page once you set it's layout to have a sidebar.</p>
+                    <br />
+                    <img src="assets/img/custom_sidebars_widgets.png" alt="Custom Sidebars Widgets" width='100%'>
+                    <br>
+                    <br>
+                    <p>The steps to add widgets:</p>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong>– Navigate to
+                            <strong>Appearance > Widgets</strong> to access the list of widgets and widget sections where they can be added to. The left hand side shows all the widgets you can use. The right hand side shows all the different sections you can add widgets to.
+                        </li>
+                        <li>
+                            <strong>Step 2</strong>– Simply drag and drop the widget you want into the widget section you want on the right hand side.
+                        </li>
+                        <li>
+                            <strong>Step 3</strong>– When finished, make sure to
+                            <strong>Save</strong> the changes to your sidebar.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="demo_export">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Choose Demo Content/ Export</h2>
+                    <br />
+                    <h3>Choose Demo Content</h3>
+                    <p>In just a few clicks you will have already the site you see when first visiting our theme in ThemeForest. Even more convenient is the fact that you can choose how many of that data you will import. You can import All, just the Content, Theme Options configurations or the Widget configurations.  All the demo content data and setting will be do downloaded to your WP installation.
+                        <strong><a href="http://specular.codeless.co">Here</a>
+                        </strong>you can view all demo sites created with Specular.
+                        <br>
+                        <br>
+                        <img src="assets/img/import-export-options.png" alt="Import Export" width='100%'>
+                        <h3>Export settings</h3>
+                        <p>Here you can export all your settings and content of your site.</p>
+                        <br>
+                        <img src="assets/img/import-export-options.png" alt="Import Export" width='100%'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="setup_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Header</h1>
+                    <h2>Setup Header</h2>
+                    <p>Specular theme offers a powerful & advances option panel organized into sections which allows the user to customize the theme in every aspect. The Header section offers the user the possibility to choose the header style from a list of predefined headers, also customize them by choosing from the options.</p>
+                    <br>
+                    <img src="assets/img/header_options.png" width="100%">
+                    <br>
+                    <br>
+                    <p>Here are the different header style. Click on different header styles to see how do they look on our theme demos.</p>
+                    <br>
+                    <h4>1. Default</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/default" title="Header Default">
+                        <img src="assets/img/headers/header_default.jpg" alt="Header Default" width="100%" />
+                    </a>
+                    <br>
+                    <h4>2. Business</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/business/" title="Business Default">
+                        <img src="assets/img/headers/header_business.png" alt="Business Default" width="100%" />
+                    </a>
+                    <br>
+                    <h4>3. Business 2</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/business2" title="Business 2 Default">
+                        <img src="assets/img/headers/header_business3.png" alt="Business 2 Default" width="100%" />
+                    </a>
+                    <br>
+                    <h4>4. Agency</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/agency2/" title="Agency Theme">
+                        <img src="assets/img/headers/header_agency2.png" alt="Agency Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>5. Magazine</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/magazine/" title="Magazine Theme">
+                        <img src="assets/img/headers/header_magazine.png" alt="Magazine Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>6. Marketing</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/marketing/" title="Marketing Theme">
+                        <img src="assets/img/headers/header_marketing.png" alt="Marketing Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>7. Medicine</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/medicine/" title="Medicine Theme">
+                        <img src="assets/img/headers/header_medicine.jpg" alt="Medicine Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>8. Minimal</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/minimal/" title="Minimal Theme">
+                        <img src="assets/img/headers/header_minimal.png" alt="Minimal Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>9. Portfolio</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/portfolio/" title="Portfolio">
+                        <img src="assets/img/headers/header_portfolio.jpg" alt="Portfolio" width="100%" />
+                    </a>
+                    <br>
+                    <h4>10. Shop</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://104.131.255.213/specular/shop/" title="Shop Theme">
+                        <img src="assets/img/headers/header_shop.png" alt="Shop Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>12. Sliding</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/sliding/" title="Sliding Theme">
+                        <img src="assets/img/headers/header_sliding.png" alt="Sliding Theme" width="100%" />
+                    </a>
+                    <br>
+                    <h4>13. Church</h4>
+                    <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/church/" title="Church Theme">
+                        <img src="assets/img/headers/header_church.jpg" alt="Church Theme" width="100%" />
+                    </a>
+                    <br>
+                    <br>
+                    <h4>Vertical Headers</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/agency/" title="White Vertical Header">
+                                <img src="assets/img/headers/vertical_header_agency.png" alt="White Vertical Header" width="40%" />
+                            </a>
+
+                            <a class="fancybox-effects-a" target="_blank" href="http://codeless.co/specular/photography/" title="Black Vertical Header">
+                                <img src="assets/img/headers/vertical_header_photography.png" alt="Black Vertical Header" width="40%" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="header_options2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Header Options</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Header Options in Specular theme options panel offers the possibility to customize the main header by selecting the header style (select from 11 header styles), define header height, background, show/hide search in header. Also it has some extra options:</p>
+                            <ul>
+                                <li>Show Search - Check this if you want the search field in the right part of the header</li>
+                                <li>Remove container from header - By checking this the header container should be removed and transformed in full-width header (can't use with left menu)</li>
+                                <li>Add button to header - Add a button in header after the menu</li>
+                                <li>Header Border Bottom - Add Border bottom for header</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/header_options.png" width="100%">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="menu_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Menu Options</h2>
+                    <p>In this section the user can configure menu styles: menu typography, menu items paddings, menu items margin.</p>
+                    <br>
+                    <img src="assets/img/menu_options.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dropdown_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Dropdown Options</h2>
+                    <p>In this section the user can set up the dropdown menu, set background colour, borders, typography and Mega-menu.</p>
+                    <br>
+                    <img src="assets/img/dropdown-options.png" width="100%">
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top_navigation_options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Top Widgetiezed Area</h2>
+                    <p>In this section the user can set up the top navigation area, set background colour, borders, typography and height.</p>
+                    <br>
+                    <img src="assets/img/top-navigation-options.png" width="100%">
+                    <br>
+                    <br>
+                    <span>To add content at the top widgetiezed area, the user must go to 
+					<strong>Widgets</strong> and add widgets at Top Header Left and Top Header Right widgets areas.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="default_page_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Default Page Header</h2>
+                    <p>Switch On to enable page header for pages, posts (For each post or page you can add custom options). Select the style, background, font colour, height.. etc, for your page header.</p>
+                    <img src="assets/img/default-page-header.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sticky_navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Sticky Navigation</h2>
+                    <p>Sticky navigation allows you to keep showing the menu even when the user has scrolled down the page. In this section the user can set up sticky navigation, set the height and the background of sticky header.</p>
+                    <br>
+                    <img src="assets/img/sticky_navigation.png" width="100%">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Pages</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="create_pages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Create New Pages</h2>
+                    <ul>
+                        <li>Step 1 – Navigate to Pages and click Add New.</li>
+                        <li>Step 2 – Input a new name for your page, then find the Page Attributes box on right side.</li>
+                        <li>Step 3 – Set your Parent page; Choose "No Parent" if it is independent.</li>
+                        <li>Step 4 – Set your template from the dropdown list. See list of page templates below.</li>
+                        <li>Step 5 – Select any number of page options in the Page Options box</li>
+                        <li>Step 6 – Content for your page goes in the editor. Use the Visual Composer, Shortcodes or Text editor. Page content is mainly built using Visual Composer. Learn more for it from the <a href="#vc_elements">"Elements"</a> section on how to use them. You can also use the demo content, to start off with a preview like the demo site.</li>
+                    </ul>
+                    <p>Here is a screenshot that shows you the various areas and descriptions of the page settings described above</p>
+                    <img src="assets/img/new-page.png" alt="New page" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="page_templates">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Page Templates</h2>
+                    With Specular you can have full layout pages or boxed pages. To configure them go to <i>Specular theme options -> Layout</i>. Please watch the video tutorial for more information.
+                    <br>
+                    <br>
+                    <a href="http://youtu.be/G1ZK2PqceEc" class="btn btn-link btn-lg" target="_blank">Page Layout video tutorial </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="set_up_homepage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Set up Homepage</h2>
+                    <p>Setting up your home page is the same as setting up any other regular pages except that you need to specify in the settings which page will be your main home page. Specular offers several pre-designed home page options. Any of the layout options you see on our demo can be imported through our demo content importer. However, you are not stuck with our pre-designed layouts, you can build any type of home page you desire using Visual Composer and the shortcode elements. You can mix and match anyway you like.</p>
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <h3>To Set Your Home Page, Follow These Steps</h3>
+                            <ul>
+                                <li>
+                                    <strong>Step 1</strong>– Navigate to Specular > General Options.</li>
+                                <li>
+                                    <strong>Step 2</strong>– Go to "Select Special Pages" area.</li>
+                                <li>
+                                    <strong>Step 3</strong>– Choose the page you want as your home page from the dropdown list.</li>
+                                <li>
+                                    <strong>Step 4</strong>– This is also the same spot you select the Blog page as the Post page.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a class="fancybox-effects-a" href="assets/img/set-home-page.png" title="Setup Home Page">
+                                <img src="assets/img/set-home-page.png" alt="Setup Home Page" width="70%" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="set_up_one_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Set up One Page</h2>
+                    <span>Turn your site into a One Page site. Where each menu item will bring the visitor to a certain section of this page. After activate this, to the sections of visual composer add a class attribute for ex: "services" and set the link of the menu item: #services</span>
+                    <img src="assets/img/one-page.png" alt="One Page" width="100%" />
+                    <br>
+                    <br>
+                    <a href="http://youtu.be/kmu7eFKY8qE" class="btn btn-link btn-lg" target="_blank">One Page video tutorial </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="set_up_contact_page">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Set up Contact Page</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+
+                    <p>To setup the contact page, you will need to follow the same steps as for creating a normal page. Using Visual Composer elements , complete the contact page with a google map to show exact location and a contact form to make it easier for visitors to contact you.
+                        <br />Basic steps:</p>
+                    <ul>
+                        <li>1- Create new page</li>
+                        <li>2- From Visual Composer elements choose 'Google maps'</li>
+                        <li>3- Edit the maps element with the right data and location url from google map</li>
+                        <li>4- Make sure to have installed 'Contact Form 7' of not, install it</li>
+                        <li>5- Configure the default contact form with your email and save it (You can create as many different forms as you need)</li>
+                        <li>6- In Visual Composer elements, choose ‘Contact form 7', select one of the forms and add it to the page.</li>
+                    </ul>
+
+                    <a href="http://youtu.be/aTom1bBsw3M" class="btn btn-link btn-lg" target="_blank">Contact Page video tutorial </a>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="assets/img/contact-form7.png" alt="Contact form 7" width="80%" />
+                    <p>
+                    <div class="bs-callout bs-callout-warning">Note: First, you will need to install the free plugin "Contact Form 7". After that it will show in the elements list of Visual Composer. Beware not to forget configuring the contact form in the plugin's settings.</div></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="set_up_faqs_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Set up FAQ's page</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <p>To setup the FAQs page, follow these steps:</p>
+                    <ul>
+                        <li>1- Go to FAQ’s menu in the main wordpress menu, select 'Create new item'</li>
+                        <li>2- Create as many question-answers as you need.</li>
+                        <li>3- Save each of them.</li>
+                        <li>4- Create a new page and name it as you wish</li>
+                        <li>5- Using Visual Composer, add ‘FAQ’ element to the page</li>
+                        <li>6- Save everything</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="assets/img/faq.png" alt="FAQ" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="set_up side nav page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Set up Side Navigation Page</h2>
+                    <p>Specular includes a Side Navigation page template that can be used to insert large amounts of content on a single page. You can also setup second level menu items on the Side Navigation page that will collapse by default and expand when the parent level is moused over or clicked. Depending on how you set it in theme options. You create Side Navigation pages, in sets. Each set always has to have a Parent page that will show at the top. Then you create additional pages and assign them to the parent page. All the pages assigned to the parent page will make one side navigation set.</p>
+                    <h3>Steps to create Side navigation page:</h3>
+                    <ul>
+                        <li>1- Navigate to Pages and click Add New</li>
+                        <li>2- Name your new page and then find the Page Attributes box on the right side.</li>
+                        <li>3- Select
+                            <strong>Left Navigation</strong> from the page template dropdown list</li>
+                        <li>4- Save</li>
+                        <li>5- We created the main page, now we’ll create the side navigation. For each navigation item will be assigned a unique page.</li>
+                        <li>6- To add pages to the side navigation set, create another page and select the previously created page as the Parent Page</li>
+                        <li>7- Set the template of this new page, also as Side Navigation</li>
+                        <li>8- Choose to have the side navigation position to left or right by selecting Left or Right in the Layout box (Page admin panel)</li>
+                        <li>9- Menu order is set alphabetically, change it by inserting a new order for each page in the Order field.</li>
+                        <li>10- At last, save and publish all pages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Blog</h1>
+                    <h2>Create Blog Posts</h2>
+                    <p>Like in any other theme, the first thing you need to do is create the blog posts. Specular offers several blog post types, like the standart post, Quote, Gallery, video and audio. Each blog post you make will be displayed in the assigned blog page. And with the ability to assign custom categories to each post, you can easily display a set of posts based on category. See below for information on how to create blog posts.</p>
+                    <h3>Steps To Create A Blog Post</h3>
+                    <ul>
+                        <li>1- Navigate to Posts, in your Wordpress admin panel</li>
+                        <li>2- Click on Add New to make a new post. Set the title and insert your content in the editor. You can use any of our shortcode builder inside the post.</li>
+                        <li>3- Add categories from the right side or create new categories to assign. Type the name of the tag in the field. Separate multiple tags with commas.</li>
+                        <li>4- Save everything</li>
+                    </ul>
+                    <a href="http://youtu.be/7QDTsO552OQ" class="btn btn-link btn-lg" target="_blank">Blog video tutorial </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog_single_post_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Blog Single Post Page</h2>
+                    <p>Every blog post you create gets a single post page. The single post page displays all the content of the post (the image, text, descriptions, etc). There are various setting for the single post page, please see below for information on each section</p>
+
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <h3>Single post's format</h3>
+                            <p>A Post Format is a piece of meta information that can be used by the theme to customize it's presentation of a post. Specular offers a variety of single posts. You can have a standard post with a featured image and basic content or you can choose between a gallery, a video post, an Audio post or a quote post. Choose the desired format in the right panel of wordpress post admin panel.</p>
+                        </div>
+                        <div class="col-md-3 ">
+                            <img src="assets/img/post_types.png" width="100%" />
+                        </div>
+                    </div>
+                    <h3>Post types</h3>
+                    <strong>1. Standard post</strong>
+                    <p>To create a basic standard post go throw these steps: Set up the post name and fill in the content. You can add media such as images, or create a gallery and add it to the post. Also Specular gives you the chance to make your content more dynamic by using Shortcodes in Posts.</p>
+                    <hr>
+                    <strong>2. Quote post</strong>
+                    <p>A quotation. Probably will contain a block-quote holding the quote content. Alternatively, the quote may be just the content, with the source/author being the title.</p>
+                    <hr>
+                    <strong>3. Gallery post</strong>
+                    <p>A gallery of images. Post can contain a gallery shortcode; can have image attachments or gallery.</p>
+                    <hr>
+                    <strong>4. Video post</strong>
+                    <p>A single video or video playlist. Then in the Excerpt area, enter the video url.</p>
+                    <hr>
+                    <strong>5. Audio post</strong>
+                    <p>An audio file or playlist. Could be used for Podcasting.</p>
+                    <hr>
+                    <strong>6. Innovative style post</strong>
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <p>This post style has additional options. If you want to use this post style, then activate the innovative post in Blog Options panel and select the effects.
+                            </p>
+                            <a class="fancybox-effects-a" href="assets/img/post_innovate.png" title="Post Innovate">
+                                <img src="assets/img/post_innovate.png" alt="portfolio Page" width="80%" />
+                            </a>
+                            <br><br>
+                            <p>
+                                <strong>Categories</strong>– this is meta information you create for the post. In the right hand sidebar of the post editing page is a "Categories" box that allows you to add a unique category to the post. For example: WordPress, Photoshop. Each category is a meta link that your viewer can click to view similar type of posts. You can also access and edit Categories from the "Post" sidebar item in your WP admin.
+                                <br />
+                                <strong>Tags</strong>– this is meta information you create for the post. In the right hand sidebar of the post editing page is a "Tags" box that allows you to add tags to the post. For example: Photography, Design. Each tag is a link that your viewer can click to view similar type of posts. You can also access and edit Tags from the "Post" sidebar item in your WP admin.
+                            </p>
+                            <br>                            
+                            <a href="http://youtu.be/yjP19UOlR7g" class="btn btn-link btn-lg" target="_blank">Blog Normal video tutorial </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section id="assigned_blog_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Assigned Blog Page</h2>
+                    <p>The first blog method we will cover is the standard WordPress method, setting up an assigned blog or "post" page. It’s as simple as making a new page, and then telling WordPress to use that page as the post page.</p>
+                    <p>Follow These Steps Below To Assign A Blog Page</p>
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong>– Navigate to Pages and click Add New.</li>
+                        <li>
+                            <strong>Step 2</strong>– Input a new name for your page, then find the Page Attributes box on right side.</li>
+                        <li>
+                            <strong>Step 3</strong>– Select the Default page template from the dropdown list.</li>
+                        <li>
+                            <strong>Step 4</strong>– Select any number of page options in the Page Options Box.</li>
+                        <li>
+                            <strong>Step 5</strong>– Click Publish to save the page.</li>
+                        <li>
+                            <strong>Step 6</strong>– To set the page as your post page, navigate to Specular > General Options and select your blog page name for the Posts Page. Doing this will automatically pull your blog posts and place them on the page.</li>
+                    </ul>
+                    <a href="http://youtu.be/7QDTsO552OQ" class="btn btn-link btn-lg" target="_blank">Blog Post & Full width blog video tutorial </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog_style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Blog Styles</h2>
+                    <p>Here are the different blog page styles:
+                    </p>
+                    <br />
+                    <ul>
+                        <li id="blog_standard">
+                            <strong>Standard</strong>– The posts are displayed in a grid view. <a href="http://codeless.co/specular/default/?page_id=402" target="_blank">View this blog style demo.</a>
+                        </li>
+                        <li id="blog_timeline">
+                            <strong>Timeline</strong>– The posts are displayed in timeline style. Here you can select sidebars positions or full width layout.<a href="http://codeless.co/specular/default/?page_id=428" target="_blank">View this blog style demo.</a>
+                        </li>
+                        <li id="blog_alternative">
+                            <strong>Alternative</strong>– The posts are displayed in grid view. Here you can select sidebars positions or full width layout. <a href="http://codeless.co/specular/default/?page_id=432" target="_blank">View this blog style demo.</a>
+                        </li>
+                        <li id="blog_masonry">
+                            <strong>Masonry</strong>– The posts are displayed in masonry style. Here you can select the number of columns and sidebars.<a href="http://codeless.co/specular/default/?page_id=441" target="_blank">View this blog style demo.</a>
+                        </li>
+                        <li id="blog_innovative">
+                            <strong>Fullscreen Innovative</strong>– The posts are displayed with big full screen images.<a href="http://codeless.co/specular/default/?page_id=449" target="_blank">View this blog style demo.</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog_single_style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Blog Single Post Page Styles</h2>
+                    <p>Here are the different blog single post page styles:
+                    </p>
+                    <br />
+                    <ul>
+                        <li id="blog_post_modern">
+                            <strong>Standard Post</strong>– The images are big and fullwidth, on scroll the blog post content is displayed with a nice scroll effect. This is our innovative blog post style. <a href="http://codeless.co/specular/default/?p=31" target="_blank">View this blog post style demo.</a>
+                        </li>
+                        <li id="blog_post_standard">
+                            <strong>Modern Post</strong>– The posts in standard mode.<a href="http://codeless.co/specular/default/?p=451" target="_blank">View this blog post style demo.</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Portfolio</h1>
+                    <h2>Create Portfolio Page</h2>
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <p>Specular includes advanced portfolio options that allows users to create as many portfolio pages as they wish. Each portfolio page you create can have a different set of categories, options, layouts and more. Let’s get started!</p>
+                            <br />
+                            <p>Follow The Steps Below To Create A Portfolio Page:</p>
+                            <ul>
+                                <li>
+                                    <strong>Step 1</strong>– Navigate to Pages and click Add New.</li>
+                                <li>
+                                    <strong>Step 2</strong>– Input a new name for your page, then find the Page Attributes box on right side.</li>
+                                <li>
+                                    <strong>Step 3</strong>– Select the Portfolio page template from the dropdown list, this will apply any portfolio post you create to the page. The following step shows how to specify a specific category per page.</li>
+                                <li>
+                                    <strong>Step 4</strong>– Scroll down to find the Portfolio Options Box, where you can select which portfolio categories will show on this page. This option is what allows you to create multiple portfolio pages because each page can have a different set of posts assigned to it with the portfolio category option. Here you can customize your portfolio. Such as the categories to display, mode, style, Layout.. etc</li>
+                                <li>
+                                    <strong>Step 5</strong>– Once you are done, be sure to Publish each page you create.</li>
+                            </ul>
+                            <br />
+                            <br />
+                            <a href="http://youtu.be/dpS6ldRLZSg" class="btn btn-link btn-lg" target="_blank">Portfolio video tutorial </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a class="fancybox-effects-a" href="assets/img/portfolio_page.png" title="Portfolio page">
+                                <img src="assets/img/portfolio_page.png" alt="portfolio Page" width="100%" />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio_items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Create Portfolio Items</h2>
+                    <p>After you have made your portfolio page, you need to create portfolio posts so they will show up on the portfolio pages. Specular offers several options for portfolio posts, and with the ability to assign custom categories to each post, you can easily display a set of posts based on category. Each portfolio post offers several ways to add tags, categories and skills. Categories are the filters you see above the post that allow the viewer to sort the posts. Skills and Tags are used to add additional meta info to the post. See below for information on how to create portfolio posts.</p>
+                    <br />
+                    <p>Follow the Steps Below To Create A Portfolio Post</p>
+                    <br />
+                    <ul>
+                        <li>
+                            <strong>Step 1</strong>– Navigate to Portfolio Items in your WordPress admin.</li>
+                        <li>
+                            <strong>Step 2</strong>– Click on Add New to make a new post. Create a title and insert your post content in the editing field. You can use any of our short code builder elements inside the post.</li>
+                        <li>
+                            <strong>Step 3</strong>– Add Categories from the right side. To assign it to the post, check the box next to the Category name. These Categories are the filters that will sit above your portfolio images and allow you to filter the different types of projects.</li>
+                        <li>
+                            <strong>Step 4</strong>– For a single image, click the first Featured Image Box, select an image and click "Set Featured Image".</li>
+                        <li>
+                            <strong>Step 5</strong>– For a slideshow, go to Single Portfolio Options -> Add/Edit Slides. Here you can add images to slideshow. You can add as pictures as you like.</li>
+                        <li>
+                            <strong>Step 7</strong>– For a video post, go to Single Portfolio Options -> select Media type Video and insert the video from either Youtube or Vimeo, url or iframe at Video field.</li>
+                        <li>
+                            <strong>Step 9</strong>– Customize the Portfolio item from the Portfolio Options box.</li>
+                        <li>
+                            <strong>Step 10</strong>– Add portfolio meta fields.</li>
+                        <li>
+                            <strong>Step 11</strong>– Once you are finished, click Publish to save the post.</li>
+                    </ul>
+                    Please see below some screen shots of portfolio item configuration.
+                    <br>
+                    <br>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <a class="fancybox-effects-a" href="assets/img/portfolio_item.png" title="Portfolio Item Page">
+                            <img src="assets/img/portfolio_item.png" alt="Portfolio item Page" width="100%" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 ">
+                        <a class="fancybox-effects-a" href="assets/img/portfolio_video.png" title="Portfolio Item Video Option">
+                            <img src="assets/img/portfolio_video.png" alt="Portfolio Item Video Option" width="100%" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 ">
+                        <a class="fancybox-effects-a" href="assets/img/portfolio_metafield.png" title="Portfolio Item meta Fields">
+                            <img src="assets/img/portfolio_metafield.png" alt="Portfolio Item meta Fields" width="100%" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio_styles">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Portfolio / Single Portfolio Styles</h2>
+                    <p>Here are the different portfolio page styles:
+                    </p>
+                    <br />
+                    <div class="col-md-3">
+                        <h4>Overlay Title / Category</h4>
+                        <ul>
+                            <li><a href="http://codeless.co/specular/default/?page_id=752" target="_blank">Fullwidth with sidebar </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=548" target="_blank">Fullwidth Masonry </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=545" target="_blank">Fullwidth with space </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=543" target="_blank">Grid No Space</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=541" target="_blank">Masonry 3 Cols </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=528" target="_blank">Overlay 2 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=532" target="_blank">Overlay 3 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=535" target="_blank">Overlay 4 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=537" target="_blank">Overlay 5 Columns</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Grayscale</h4>
+                        <ul>
+                            <li><a href="http://codeless.co/specular/default/?page_id=750" target="_blank">Fullwidth With Sidebar </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=596" target="_blank">Masonry 3 Cols</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=593" target="_blank">Grid No Space</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=591" target="_blank">Fullwidth with space</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=589" target="_blank">Fullwidth Masonry</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=576" target="_blank">Grayscale 2 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=579" target="_blank">Grayscale 3 Columns </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=583" target="_blank">Grayscale 4 Columns </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=586" target="_blank">Grayscale 5 Columns </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Basic</h4>
+                        <ul>
+                            <li><a href="http://codeless.co/specular/default/?page_id=612" target="_blank">Basic 2 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=614" target="_blank">Basic 3 Columns</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=616" target="_blank">Basic 4 Columns </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=618" target="_blank">Basic 5 Columns </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=748" target="_blank">Fullwidth With Sidebar </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=620" target="_blank">Fullwidth Masonry </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=622" target="_blank">Fullwidth with space </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=626" target="_blank">Masonry 3 Cols </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?page_id=624" target="_blank">Grid No Space </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Single Portfolio Styles</h4>
+                        <ul>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-four-4" target="_blank">Gallery Grid </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-six" target="_blank">With Video </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-five" target="_blank">Floating Right Sidebar </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-four" target="_blank">Floating Left Sidebar </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-seven" target="_blank"> With Slideshow Bottom </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-eight" target="_blank"> With Slideshow Left </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-four-3" target="_blank">Featured Image Right </a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-three" target="_blank">Fullwidth Featured Image</a>
+                            </li>
+                            <li><a href="http://codeless.co/specular/default/?portfolio=portfolio-two" target="_blank">Fullwidth Slideshow </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="sliders">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Sliders</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="import_slider_dummy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Import Slider Dummy Data</h2>
+                    You can find sliders dummy data into your theme packet. Please find the slider demo data file and import it at Sliders panel. The Codeless slider demo data will be imported when you install theme dummy data.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assign_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>How to Assign Slider</h2>
+                    <p>To assign slider to a page, go to the 'General Settings' > 'Slider Options' and choose one of the available sliders from the dropdown list.</p>
+                    <img src="assets/img/flex-slider.png" alt="assign slider" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="codeless_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Codeless Slider</h1>
+                    <p>Codeless slider is a very nice and powerful slider. You can create lot of different sliders, each different from one another. To create and populate a slider follow these steps:</p>
+                    <ul>
+                        <li>1- Create the slider in
+                            <strong>Codeless Sliders > Add New Slider</strong>
+                        </li>
+                        <li>2- Fill in the fields with the required info.</li>
+                        <li>3-
+                            <strong>Save</strong>
+                        </li>
+                        <li>4- Now is time to create the slides, that will populate the slider.</li>
+                        <li>5- On Codeless go to
+                            <strong>Add New Slide</strong>
+                        </li>
+                        <li>6- Set the Name of the new slide.</li>
+                        <li>7- Configure the slide options in
+                            <strong>‘Codeless Slide Option’</strong> box below.</li>
+                        <li>8- In the right menu, check the slider that will contain this slide (it can be assign to more than one slider)</li>
+                        <li>9-
+                            <strong>Publish</strong>
+                        </li>
+                    </ul>
+                    <img src="assets/img/codeless-slider-options.png" alt="Codeless Slider" width="100%" />
+                    <p>To user a slider, you have to first select the page that will contain it. Than select and configure the desired slider.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="revolution_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Revolution Slider</h2>
+                    <p>Revolution Slider, is composed by sliders and slider template.</p>
+                    <a class="fancybox-effects-a" href="assets/img/revolution-slider.png" title="Revolution Slider">
+                        <img src="assets/img/revolution-slider.png" alt="revolution slider" width="100%" />
+                    </a>
+					<br><br>
+                    <p>You can choose to either import Slider with dummy data, or create it from scratch. To create from the start, follow the steps below:</p>
+                    <br>
+                    <!--<ul><li>Create new template</li></ul>
+                      <a class="fancybox-effects-a" href="assets/img/revolution-slider-template.png" title="Revolution Slider Template"><img src="assets/img/revolution-slider-template.png" alt="revolution slider template"  width="100%" /></a>-->
+                    <ul>
+                        <li>Create new slider</li>
+                    </ul>
+                    <a class="fancybox-effects-a" href="assets/img/revolution-new-slider.png" title="Revolution New Slider">
+                        <img src="assets/img/revolution-new-slider.png" alt="revolution new slider" width="100%" />
+                    </a>
+                    <br>
+                    <br>
+                    <p>After creating the slider, you can edit , export or delete it. There can be changes even to the template, after it's been created.</p>
+                    <br>
+                    <a class="fancybox-effects-a" href="assets/img/rev-slider.png" title="Revolution Slider">
+                        <img src="assets/img/rev-slider.png" alt="revolution slider" width="100%" />
+                    </a>
+                    <br><br>
+                    <p>How To Use:</p>
+                    <br />                   
+                    <p>From the theme html use:
+                        <code>&lt;?php putRevSlider( "alias" ) ?&gt;</code>example:
+                        <code>&lt;?php putRevSlider() ?&gt;</code>
+                        <br />For show only on homepage use:
+                        <code>&lt;?php putRevSlider(,"homepage") ?&gt;</code>
+                        <br />For show on certain pages use:
+                        <code>&lt;?php putRevSlider(,"2,10") ?&gt;</code>
+                        <br />From the widgets panel drag the "Revolution Slider" widget to the desired sidebar
+                        <br />From the post editor insert the shortcode from the sliders table</p>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="layer_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Layer Slider</h2>
+                    <p>LayerSlider WP is a premium multi-purpose slider for creating image galleries, content sliders, and mind-blowing slideshows with must-see effects, even from your WordPress posts and pages. It uses cutting edge technologies to provide the smoothest experience that’s possible, and it comes with more than 200 present 2D and 3D slide transitions.</p>
+                    <p>All Sliders - use this menu to create, edit or import/export sliders.</p>
+                    <img src="assets/img/layerslider-sliders.png" alt="layerslider sliders" width="100%" />
+					<br>
+					<br>
+                    <img src="assets/img/layerslider-edit-slide.png" alt="layer slider edit" width="100%" />
+					<br>
+					<br>
+                    <p>
+                        <strong>Skin Editor</strong>- use this menu for core changes of slider’s css.</p>
+                    <br />
+                    <p>
+                        <strong>Transition Builder</strong>- is used to assign specific transitions to your slider or even compose new ones. You can use 2D and 3D transitions.</p>
+                    <br />
+                    <img src="assets/img/layerslider-transition-builder.png" alt="layer slider transition builder" width="100%" />
+					<br>
+					<br>
+                    <p>
+                        <strong>Custom Styles Editor</strong>- gives a peak on your custom CSS file.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flex_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Flex Slider</h1>
+                    <p>Flex slider is another available slider for your convenience.</p>
+                    <img src="assets/img/flex-slider.png" alt="flex slider" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Footer</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_options2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Footer Options</h2>
+                    <p>In this section you can customize the footer. You can choose the number of columns it should have and also edit the copyright text.</p>
+                    <img src="assets/img/footer_options.png" alt="Footer Options" width="100%" />
+                    <br>
+                    <br>
+                    <p>For further editing, go to <b>General Options</b>. Under 'Styling Options' select Footer options.</p>
+                    <br>
+                    <br>
+                    <img src="assets/img/footer-styling.png" alt="Footer styling" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_widgets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Add Widget To Footer</h2>
+                    <p>Specular includes several custom widgets. All widgets are accessed in the Widgets section of the WordPress admin. Widgets can be added to any sidebar, footer column or sliding bar column. Widgets can even be added on pages with the Widgets On Pages plugin (this is a 3rd party plugin that we do not support).There are various fields and settings to choose for each individual widget; all are self explanatory. You can put as many widgets as you want inside of a sidebar or footer/sliding bar column.
+                        <br>If you choose to have the footer in your wordpress site, than you’ll have to choose the widgets to display in it. To do so, go to your
+                        <strong>Appearance > Widgets</strong> menu and assign any widget you want to the specific footer columns.</p>
+                    <img src="assets/img/footer-widgets.png" alt="Footer widgets" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vc_elements">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1>Visual Composer elements</h1>
+                    <p><b>Visual composer</b> is a strong and important feature of Specular theme. It contains all necessary elements to build numerous unique and complete pages. You can add, edit, delete, arrange elements to your liking and need. We'll go through a full and detailed explanation of each one of them. See below a list of all available elements:</p>
+                    <img src="assets/img/vc-elements.png" alt="Visual Composer Elements" width="100%" />
+                    <br />
+                    <br />
+                    <h2>Rows</h2>Are the main dividers. A page is divided into sections (rows) each of them serves as a container to other elements. One row can be break in two or more columns. Each of these columns can be customized separately. You can add as many rows as you need in a page. You can also edit, delete and even duplicate a row with all it's content.
+                    <br />
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/vc-rows.png" title="Visual Composer Rows">
+                                <img src="assets/img/vc-rows.png" alt="Visual Composer Rows" width="100%" />
+                            </a>
+                            <br>
+                            <br>
+                        </div>
+						
+                        <div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/rows-settings.png" title="Visual Composer Row settings">
+                                <img src="assets/img/rows-settings.png" alt="Visual Composer Row Settings" width="100%" />
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/column-settings.png" title="Visual Composer Column settings">
+                                <img src="assets/img/column-settings.png" alt="Visual Composer Column settings" width="100%" />
+                            </a>
+
+                        </div>
+                    </div>
+					<br>
+					<br>
+					 <div class="row">
+                        <div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/column-settings.png" title="Visual Composer Column Front-end">
+                                <img src="assets/img/row_columns_front.png" alt="Visual Composer Column settings" width="100%" />
+                            </a>
+                        </div>						
+						<div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/vc-rows.png" title="Visual Composer Rows Front-end">
+                                <img src="assets/img/row_front_fullwidthcontainer.jpg" alt="Visual Composer Rows" width="100%" />
+                            </a>                            
+                        </div>						
+                        <div class="col-md-3 img_crop">
+                            <a class="fancybox-effects-a" href="assets/img/rows-settings.png" title="Visual Composer Row Front-end">
+                                <img src="assets/img/row_front_image.jpg" alt="Visual Composer Row Settings" width="100%" />
+                            </a>
+                        </div>                    
+                    </div>					
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <a href="http://youtu.be/h6GhQ72Pl-0" class="btn btn-link btn-lg" target="_blank">Visual Composer Rows video tutorial </a>
+                            
+                            <a href="http://youtu.be/Fl6Tv8bL3c4" class="btn btn-link btn-lg" target="_blank">Visual Composer Columns video tutorial </a>
+                            
+                            <a href="http://youtu.be/DCGGyy4jdSE" class="btn btn-link btn-lg" target="_blank">Visual Composer Frontend video tutorial </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Text Block</h2>Consists of a simple text block, with a title. Can be used to show information and can be customized either from the options that the element has itself, or my custom css(it you assign a different css class to it)
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/text-block-settings.png" title="Text block Settings">
+                                        <img src="assets/img/text-block-settings.png" alt="Text block Settings" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-text-block.png" title="Text block Settings">
+                                        <img src="assets/img/f-text-block.png" alt="Text block Settings" width="100%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>Separator with Text</h2>Is a feature used to separate different sections or start a new section while giving some information about it (the Text)
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/separator-with-text.png" title="Separator with text">
+                                        <img src="assets/img/separator-with-text.png" alt="separator with text" width="100%" />
+                                    </a>
+                                </div>
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-separator-with-text.png" title="Separator with text">
+                                        <img src="assets/img/f-separator-with-text.png" alt="separator with text" width="100%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Image Gallery</h2>Just like the element name says, is used to input a gallery of images into the page.
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/image-gallery.png" title="image gallery">
+                                        <img src="assets/img/image-gallery.png" alt="image gallery" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-galleries.jpg" title="image gallery">
+                                        <img src="assets/img/f-galleries.jpg" alt="image gallery" width="100%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <h2>Accordion</h2>Similar function as tabs but with a different display of section title and content.
+                            <br />
+                            <br />
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/accordition.png" title="Accordition">
+                                        <img src="assets/img/accordition.png" alt="accordition" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-accordititon.png" title="Tabs">
+                                        <img src="assets/img/f-accordititon.png" alt="accordititon" width="100%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Tabs</h2>Are used to structure content according to specific categories (the tabs titles) You can create as many tabs as you need. A tab can contain other elements as well, do not limit yourself to only text.
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/tabs-settings.png" title="Tabs Settings">
+                                        <img src="assets/img/tabs-settings.png" alt="Tabs Settings" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/tabs.png" title="Tabs ">
+                                        <img src="assets/img/tabs.png" alt="tab1" width="100%" />
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>Widgetized Sidebar</h2>Use this element in case you want to add a group of selected widgets in your page. Create the sidebar first, assign widgets to it from
+                            <strong>Appearance > Widgets</strong> menu and assign that sidebar to this element. Place it anywhere in the page.
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/widget-sidebar.png" title="widget-sidebar">
+                                        <img src="assets/img/widget-sidebar.png" alt="widget-sidebar" width="100%" />
+                                    </a>
+                                </div>
+
+
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-widgets-sidebar.png" title="Row Widget Sidebar">
+                                        <img src="assets/img/f-widgets-sidebar.png" width="100%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Button 2</h2>Create and customize a button.
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/button2.png" title="Button 2">
+                                        <img src="assets/img/button2.png" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/f-button.png" title="Row Button 2">
+                                        <img src="assets/img/f-button.png" width="30%" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>Call-to-Action</h2>CTA blocks with various actions.
+                            <br />
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-3 img_crop">
+                                    <a class="fancybox-effects-a" href="assets/img/call-to-action.png" title="Row Call to Action">
+                                        <img src="assets/img/call-to-action.png" width="100%" />
+                                    </a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-call-to-action-button2.png" title="Row Call to Action">
+                                            <img src="assets/img/f-call-to-action-button2.png" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Video Player</h2>Allows you to easily adds a video in your web page.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/video-player.png" title="Video Player">
+                                            <img src="assets/img/video-player.png" alt="video-player" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-video.png" title="Row Video Player">
+                                            <img src="assets/img/f-video.png" alt="row video player" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <h2>Raw HTML</h2>Allows you to further customize your web page by adding plain html
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/raw-html.png" title="Raw HTML">
+                                            <img src="assets/img/raw-html.png" alt="raw-html" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f-raw-html.png" title="Raw HTML">
+                                            <img src="assets/img/f-raw-html.png" alt="raw-html" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Raw JS</h2>To add custom js code, use this element.
+                                <br />
+                                <br />
+
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/raw-js.png" title="Raw Javascript">
+                                            <img src="assets/img/raw-js.png" alt="raw-js" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f-raw-js.png" title="Raw Javascript">
+                                            <img src="assets/img/f-raw-js.png" alt="raw-js" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Contact Form 7</h2>Specular uses Contact Form 7 plugin for the contact form. As one of the best contact plugins, easily customizable and vulnerability-free. Create different forms in the plugins panel and choose which one to use in this element.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/contact-form7.png" title="Contact Form 7">
+                                            <img src="assets/img/contact-form7.png" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-contact.png" title="Contact Form 7">
+                                            <img src="assets/img/f-contact.png" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h2>Empty Space</h2>Creates an empty space to use anywhere in the page. Use this to refine the design of your page.
+                        <br />
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Recent News</h2>Displays posts according to their category.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/recent-news.png" title="Recents News">
+                                            <img src="assets/img/recent-news.png" alt="Recents News" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-blog-elements1.png" title="Recents News">
+                                            <img src="assets/img/f-blog-elements1.png" alt="Recents News" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-blog-elements2.png" title="Recents News">
+                                            <img src="assets/img/f-blog-elements2.png" alt="Recents News" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <h2>Latest From Blog</h2>Displaying Recent posts often helps your users to visit them easily specially on the sidebar of a single post page. But in some designing processes people want to display recent posts in many different ways.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/latest-from-blog.png" title="Latest From Blog">
+                                            <img src="assets/img/latest-from-blog.png" alt="Latest from blog" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-blog-elements.png" title="Latest From Blog">
+                                            <img src="assets/img/f-blog-elements.png" alt="Recents News" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Full Blog</h2>Use this element to display posts as a blog. You can choose to show a certain number of posts, or all of them.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/full-blog.png" title="Full Blog">
+                                            <img src="assets/img/full-blog.png" alt="full-blog" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_full_blog.png" title="Full Blog">
+                                            <img src="assets/img/f_full_blog.png" alt="full blog" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>FAQ</h2>Specular includes a FAQ (Frequently Asked Questions) section. It allows you to insert many questions organized into categories using filters.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/faq.png" title="Frequently Asked Questions">
+                                            <img src="assets/img/faq.png" alt="faq" width="100%" />
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-faqs.png" title="Frequently Asked Questions">
+                                            <img src="assets/img/f-faqs.png" alt="faq" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Slideshow</h2>Flexslider slideshow.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/slideshow1.png" title="Slideshow">
+                                            <img src="assets/img/slideshow1.png" alt="Slideshow" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_slideshow.png" title="Slideshow">
+                                            <img src="assets/img/f_slideshow.png" alt="Slideshow" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Google Map</h2>Create a google map.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/google-maps.png" title="Google Maps">
+                                            <img src="assets/img/google-maps.png" alt="google maps" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-maps.png" title="Maps">
+                                            <img src="assets/img/f-maps.png" alt="maps" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <h2>Custom Heading</h2>Add custom heading text with google font.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/custom-heading.png" title="Custom Heading">
+                                            <img src="assets/img/custom-heading.png" alt="row-custom-heading" width="100%" />
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f-headings.png" title="Custom Headings">
+                                            <img src="assets/img/f-headings.png" alt="Custom Headings" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Title Heading</h2>Block title heading, section and column.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/element-header.png" title="Element Header">
+                                            <img src="assets/img/element-header.png" alt="element-header" width="100%" />
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_title_heading.png" title="Element Header">
+                                            <img src="assets/img/f_title_heading.png" alt="element-header" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Services Small Icon</h2>Small icon in the left.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/services-small-icon.png" title="Services Small icon">
+                                            <img src="assets/img/services-small-icon.png" alt="services-small-icon" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_services_small_icon.png" title="Services Small icon">
+                                            <img src="assets/img/f_services_small_icon.png" alt="services-small-icon" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Countdown</h2>Coming soon, countdown.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/countdown.png" title="Countdown">
+                                            <img src="assets/img/countdown.png" alt="countdown" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_countdown.png" title="Countdown">
+                                            <img src="assets/img/f_countdown.png" alt="countdown" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <h2>Price List</h2>Price list is linked with List item element.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/price-list.png" title="Price List">
+                                            <img src="assets/img/price-list.png" alt="price-list" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_price_list.png" title="Price List">
+                                            <img src="assets/img/f_price_list.png" alt="price-list" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br />
+                                        <br />
+                                        <a href="http://youtu.be/Lv5TU1TAXkI" class="btn btn-link btn-lg" target="_blank">Price List video tutorial </a> 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>List & List Item</h2>List with or without description.
+                                <br />
+                                <br />
+
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/list.png" title="List">
+                                            <img src="assets/img/list.png" alt="list" width="100%" />
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_list.png" title="List">
+                                            <img src="assets/img/f_list.png" alt="list" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <h2>Single Staff</h2>Show one member from staff.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/single-staff-member.png" title="Single Staff Member">
+                                            <img src="assets/img/single-staff-member.png" alt="single-staff-member" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_single_staff.jpg" title="Single Staff Member">
+                                            <img src="assets/img/f_single_staff.jpg" alt="single-staff-member" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br />
+                                        <br />
+                                        <a href="http://youtu.be/SdDF4jawtrI" class="btn btn-link btn-lg" target="_blank">Staff video tutorial </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Services Circle Icon</h2>With large icon in top center.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/services-circle-icon.png" title="Services Circle Icon">
+                                            <img src="assets/img/services-circle-icon.png" alt="services circle icon" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_services_circle_icon.png" title="Services Circle Icon">
+                                            <img src="assets/img/f_services_circle_icon.png" alt="services circle icon" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Clients</h2>Show clients from
+                                <strong>Theme Options > Clients</strong>
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/clients-settings.png" title="clients">
+                                            <img src="assets/img/clients-settings.png" alt="clients" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f-clients.png" title="clients">
+                                            <img src="assets/img/f-clients.png" alt="clients" width="100%" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Services Square</h2>Square with borders
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/services-square.png" title="Services Square">
+                                            <img src="assets/img/services-square.png" alt="services square" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_services_square.png" title="Services Square">
+                                            <img src="assets/img/f_services_square.png" alt="services square" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Services Text Effect</h2>When hover title, shows description.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/services-text-effect.png" title="Services Text Effect">
+                                            <img src="assets/img/services-text-effect.png" alt="services text effect" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_services_text_effect.png" title="Services Text Effect">
+                                            <img src="assets/img/f_services_text_effect.png" alt="services text effect" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Staff Carousel</h2>Staff members carousel.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/staff-carusel.png" title="Staff Carusel">
+                                            <img src="assets/img/staff-carusel.png" alt="staff-carusel" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_staff_carousel.png" title="Staff Carusel">
+                                            <img src="assets/img/f_staff_carousel.png" alt="staff-carusel" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Animated Counter</h2>Animated counter with icon in top.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/animated-counter.png" title="Animated Counter">
+                                            <img src="assets/img/animated-counter.png" alt="animated counter" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_animated_counters.png" title="Animated Counter">
+                                            <img src="assets/img/f_animated_counters.png" alt="animated counter" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Chart Skill</h2>Pie chart skill.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/chart-skill.png" title="Chart Skill">
+                                            <img src="assets/img/chart-skill.png" alt="chart skill" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_skill_chart.jpg" title="Chart Skill">
+                                            <img src="assets/img/f_skill_chart.jpg" alt="chart skill" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Skills</h2>Progress bar skills. Linked with skill element.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/skill.png" title="Skill">
+                                            <img src="assets/img/skill.png" alt="skill" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_skills.png" title="Skill">
+                                            <img src="assets/img/f_skills.png" alt="skill" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Media</h2>Add image or video with custom size.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/media.png" title="Media">
+                                            <img src="assets/img/media.png" alt="media" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_media.png" title="Media">
+                                            <img src="assets/img/f_media.png" alt="media" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Button</h2>Get the styles from Theme Options.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/button.png" title="Button">
+                                            <img src="assets/img/button.png" alt="button" width="100%" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_buttons.png" title="Button">
+                                            <img src="assets/img/f_buttons.png" alt="button" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <a href="http://youtu.be/kXswly4_wcA" class="btn btn-link btn-lg" target="_blank">Button video tutorial </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Single Testimonial</h2>Testimonial with image on the left.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/testimonial.png" title="Testimonial">
+                                            <img src="assets/img/testimonial.png" alt="testimonial" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_single_testimonials.png" title="Testimonial">
+                                            <img src="assets/img/f_single_testimonials.png" alt="testimonial" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <a href="http://youtu.be/wSl76Rmejq0" class="btn btn-link btn-lg" target="_blank">Testimonials video tutorial </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Services Media</h2>Add a service with image or video.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/services-media.png" title="Services Media">
+                                            <img src="assets/img/services-media.png" alt="services-media" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_services_media.png" title="Services Media">
+                                            <img src="assets/img/f_services_media.png" alt="services-media" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Testimonial (Carousel)</h2>Without image and simple.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/testimonial-carusel.png" title="Testimonial Carusel">
+                                            <img src="assets/img/testimonial-carusel.png" alt="Testimonial Carusel" width="100%" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_testimonial_carousel.png" title="Testimonial Carusel">
+                                            <img src="assets/img/f_testimonial_carousel.png" alt="Testimonial Carusel" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Testimonial (Cycle)</h2>Testimonial business, corporate style, no image.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/testimonial-cycle.png" title="Testimonial Cycle">
+                                            <img src="assets/img/testimonial-cycle.png" alt="testimonial-cycle" width="100%" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_testimonial_cycle.png" title="Testimonial Cycle">
+                                            <img src="assets/img/f_testimonial_cycle.png" alt="testimonial-cycle" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Recent Portfolio</h2>Show off some recent portfolio.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/recent-portfolio.png" title="recent-portfolio">
+                                            <img src="assets/img/recent-portfolio.png" alt="recent-portfolio" width="100%" />
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_recent_portfolio.jpg" title="recent-portfolio">
+                                            <img src="assets/img/f_recent_portfolio.jpg" alt="recent-portfolio" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Separator</h2>Create a custom separator.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/separator.png" title="Separator">
+                                            <img src="assets/img/separator.png" alt="separator" width="100%" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img_crop">
+
+                                        <a class="fancybox-effects-a" href="assets/img/f_separator.png" title="Separator">
+                                            <img src="assets/img/f_separator.png" alt="separator" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Revolution Slider</h2>Place Revolution slider.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/revolution-slider-settings.png" title="Revolution Slider">
+                                            <img src="assets/img/revolution-slider-settings.png" alt="revolution-slider" width="100%" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_revolution_slider.jpg" title="Revolution Slider">
+                                            <img src="assets/img/f_revolution_slider.jpg" alt="revolution-slider" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Layer Slider</h2>Place Layer slider.
+                                <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/layer-slider-settings.png" title="Layer Slider">
+                                            <img src="assets/img/layer-slider-settings.png" alt="layer-slider" width="100%" />
+                                        </a>
+                                    </div>
+									<div class="col-md-3 img_crop">
+                                        <a class="fancybox-effects-a" href="assets/img/f_layer_slider.png" title="Layer Slider">
+                                            <img src="assets/img/f_layer_slider.png" alt="layer-slider" width="100%" />
+                                        </a>
+                                    </div>
+									
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="shortcodes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Shortcodes</h2>
+                    <p>Here is the list of all shortcodes used in theme</p>
+                    <ul>
+                        <li>
+                            <h3>Dropcaps</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[dropcaps form="square" color="#fff" fontcolor="#222"]D[/dropcaps]orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/dropcaps.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Social Icons</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[social_icons icon="facebook" link="facebook.com"][social_icons icon="twitter" link="twitter.com"][social_icons icon="linkedin" link="linkedin.com"] [social_icons icon="pinterest"][social_icons icon="google_plus"] [social_icons icon="github"] [social_icons icon="phone"] </pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/social_icons.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Highlights</h3>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <p>Code:</p>
+                                    <pre>Lorem Ipsum is simply dummy text of the printing and [highlights]typesetting [/highlights]industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and [highlights]scrambled[/highlights] it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was [highlights]popularised[/highlights]  in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing  [highlights]software[/highlights] like Aldus PageMaker including versions of  [highlights]Lorem[/highlights]  Ipsum.</pre>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/highlights.png" width="85%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Audio Player</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[player_audio link="http://users.skynet.be/fa046054/home/P22/track06.mp3" audio_type="mp3"]</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/audio.png" width="80%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Image Style</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[imagestyle style="circle"]your image source here[/imagestyle]</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/image_style.jpg" width="40%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Block Quote</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[blockquote background="#10b8c7"]Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.[/blockquote]</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/blockquote.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Labels & Badgets</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when [label_badget type="label" style="warning"]warning[/label_badget] an unknown printer took a label galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the important leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the[label_badget type="label" style="success"] success[/label_badget] release of Letraset sheets containing info Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/labels.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Alerts</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[alert title="Success!" style="success"]Lorem Ipsum is simply dummy text of the printing and typesetting industry.[/alert] [alert title="Warning!" style="warning"]Lorem Ipsum is simply dummy text of the printing and typesetting industry.[/alert] </pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/alerts.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Headings</h3>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p>Code:</p>
+                                    <pre>[h1_heading]Heading h1 [/h1_heading]
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                      [h2_heading]Heading h2[/h2_heading]
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                  [h3_heading]Heading h3 [/h3_heading]
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                  [h4_heading]Heading h4 [/h4_heading]
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,[h5_heading]Heading h5 [/h5_heading]Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                  [h6_heading]Heading h6 [/h6_heading]
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, </pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/headings.png" width="100%">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Tooltips</h3>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <p>Code:</p>
+                                    <pre>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the[tooltip title="This is a tooltip"] 1500s[/tooltip], when warning an unknown printer took a label galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the important  leap into electronic typesetting, remaining essentially unchanged. It was popularised in the [tooltip title="title"]1960s[/tooltip] with the success release of Letraset sheets containing info</pre>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>How it look on front-end:</p>
+                                    <img src="assets/img/shortcodes/tooltips.png" width="80%">
+                                </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <a href="http://youtu.be/qNcYNEpyksc" class="btn btn-link btn-lg" target="_blank">Watch Shortcode video tutorial </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="woocommerce">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>WooCommerce</h2>
+                    Specular theme is compatible with WoCommerce and includes full design integration. To get started with creating your online shop, you need to install the free WooCommerce Plugin. This documenation on using WooCommerce is the very basic information you need to get started. Please take a look at the important links below that have additional information about using WooCommerce.
+                    <br>
+                    <br>
+                    <ul>
+                        <li><a href="http://www.woothemes.com/woocommerce/" target="_blank">WooCommerce Plugin Page</a> – This is the official WooCommerce plugin page</li>
+                        <li><a href="http://docs.woothemes.com/documentation/plugins/woocommerce/" target="_blank">WooCommerce Documentation</a> – This is the WooCommerce Online documenation created by WooThemes</li>
+                        <li><a href="http://wordpress.org/support/plugin/woocommerce" target="_blank">WooComerce Commiunity Forums</a> – This is the community forum for WooCommerce plugin created by WooThemes</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wpml">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>WPML</h2>
+                    Specular theme is fully compatible with WPML translation plugin. Below you will find documentation their team created for using WPML plugin. If you've purchased WPML and have any questions or issues, please check the links below.http://wordpress.org/support/plugin/woocommerce
+                    <br>
+                    <br>
+                    <ul>
+                        <li><a href="http://wpml.org/forums/forum/english-support/" target="_blank">WPML Forum Support</a> - If you bought WPML then you get free support from their team</li>
+                        <li><a href="http://wpml.org/documentaion" target="_blank">WPML Documentation</a> - This is created by the WPML developerss</li>
+                        <li><a href="#translating_widgets">Translating Widgets</a> - Tutorial recommended by wpml team for translating widgets</li>
+                        <li><a href="#translating_options">Theme Options</a> - How to set different theme options with WPML</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mailchimp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>MailChimp</h2>
+                    MailChimp is a wordpress plugin used to create, send, and track email newsletters.
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    <!-- ========================= MAIN CONTAINER >> END ========================= -->
+
+
+    <!-- CHANGELOG >> START -->
+    <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="changelog-label">Changelog</h3>
+        </div>
+        <div class="modal-body">
+
+            <!-- Code Block >> Start -->
+            <pre>Legend:
++   Addition
+^   Change
+-   Removed
+*   Security Fix
+#   Bug Fix
+!   Note</pre>
+            <!-- Code Block >> End -->
+
+            <!-- Code Block >> Start -->
+            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+            <!-- Code Block >> End -->
+
+        </div>
+        <div class="clear"></div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div>
+    <!-- CHANGELOG >> END -->
+
+
+
+
+
+    <footer class="paddings75_top_bottom handheld_centering">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-8">
+                    <div class="navigation">
+                        <div class="row">
+                            <nav>
+                                <ul>
+                                     <li><a href="http://codeless.co" class="active">Home</a>
+                                    </li>
+
+                                    <li><a href="http://codeless.co/presentation">Themes</a>
+                                    </li>
+
+                                    <li><a href="http://codeless.co/policy.html">Policy</a>
+                                    </li>
+
+                                    <li><a href="http://support.codeless.co">Support</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-4">
+                    <div class="navigation">
+                        <div class="row">
+                            <div class="copyright">Copyright 2014. CODELESS Limited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+    </footer>
+    <!-- CREDITS >> END -->
+
+    <!-- loading javascripts -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+
+    <!-- init javascripts -->
+    <script src="assets/js/init.js"></script>
+    <script type="text/javascript">
+    $(".nav li").each(function() {
+        $(this).click(function(e) {
+            $(".nav .active").removeClass("active");
+            $(this).addClass("active");
+        })
+    });
+
+    /*fancybox js*/
+    $(document).ready(function() {
+
+        // Change title type, overlay closing speed
+        $(".fancybox-effects-a").fancybox({
+            helpers: {
+                title: {
+                    type: 'outside'
+                },
+                overlay: {
+                    speedOut: 0
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
